@@ -37,7 +37,9 @@ class FullTable extends Migration
             $table->string('major');
             $table->string('year');
             $table->integer('semester');
+            $table->integer('meet');
             $table->timestamps();
+            $table->foreign('major')->references('id')->on('major');
         });
         
         Schema::create('courseAssignment', function (Blueprint $table) {
@@ -69,6 +71,10 @@ class FullTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('major');
+        Schema::dropIfExists('users');
+        Schema::dropIfExists('courseCode');
+        Schema::dropIfExists('courseAssignment');
+        Schema::dropIfExists('courseLecturer');
     }
 }
