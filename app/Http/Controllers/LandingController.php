@@ -19,6 +19,11 @@ class LandingController extends Controller
 
     public function course()
     {
-    	return view('learning-course',['title' => 'View Course']);
+    	return view('learning-view-course',['title' => 'View Course']);
+    }
+
+    public function folder()
+    {
+        return view('learning-course-folder',['title' => 'View Course']);
     }
 }

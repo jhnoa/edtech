@@ -6,15 +6,8 @@
 				<div class="navbar clearfix">
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
-							<li>
-								<a href="http://elearning.surya.ac.id/">Home</a>
-							</li>
-							<li>
-								<span class="accesshide ">
-									<span class="arrow_text">/</span>&nbsp;
-								</span>
-								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/">My Courses</a>
-							</li>
+							<li><a href="{{ route('index') }}">Home</a></li>
+							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="{{ route('my course') }}">My Course</a></li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
