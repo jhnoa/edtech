@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('landing',['title' => 'Home']);
     }
+
+    public function dosen()
+    {
+        return view('dosen.index',['title' => 'Home']);
+    }
 }

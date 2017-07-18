@@ -13,9 +13,17 @@
 
 Route::get('/','LandingController@index')->name('index');
 
-Route::get('learning','LandingController@learning');
-Route::get('learning/view','LandingController@course');
+// Authentication
 Auth::routes();
 
-Route::get('home', 'LandingController@index');
+
+// Learning Mahasiswa
+Route::get('learning','LandingController@learning');
+Route::get('learning/view','LandingController@course');
+
+
+// Learning Dosen
+Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');
+
+//Route::get('home', 'LandingController@index');
 //Route::get('logout', 'HomeController@index');
