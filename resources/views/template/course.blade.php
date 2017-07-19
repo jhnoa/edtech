@@ -7,19 +7,19 @@
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
 							<li>
-								<a href="{{ route('index') }}">Home</a>
+								<a href="http://elearning.surya.ac.id/">Home</a>
 							</li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
-								<span class="arrow sep">&gt;</span><a href="">My Courses</a>
+								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/">My Courses</a>
 							</li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
-								<span class="arrow sep">&gt;</span><a>Human Computer Interaction</a>
+								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/">Human Computer Interaction</a>
 							</li>
 						</ul>
 					</div>
@@ -53,7 +53,7 @@
 							  			<div id="course-365" class="box coursebox">
 							  				<div class="course_title">
 							  					<h2 class="title">
-							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="learning/view">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>
+							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>
 							  					</h2>
 							  					<div class="box flush"></div>
 							  				</div>

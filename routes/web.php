@@ -18,9 +18,8 @@ Auth::routes();
 
 
 // Learning Mahasiswa
-Route::get('learning','LandingController@learning')->name('my course');
-Route::get('learning/view','LandingController@course');
-Route::get('learning/folder','LandingController@folder');
+Route::get('learning','LandingController@learning');
+Route::get('learning/view','LandingController@course')->name('viewCourse');
 
 
 // Learning Dosen

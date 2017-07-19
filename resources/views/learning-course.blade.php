@@ -1,2 +1,2 @@
-@extends('template.master-course')
+@extends('template.master-view-course')
 @section('title', $title )
