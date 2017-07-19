@@ -6,9 +6,9 @@
 				<div class="navbar clearfix">
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
-							<li><a href="http://elearning.surya.ac.id/">Home</a></li>
-							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/my/">My Course</a></li>
-							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/course/index.php?categoryid=15">Human Computer Interaction</a></li>
+							<li><a href="{{ route('index') }}">Home</a></li>
+							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="{{route('myCourse')}}">My Course</a></li>
+							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> Human Computer Interaction</li>
 							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/course/index.php?categoryid=61">Semester Genap - 2014/2015</a></li>
 							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="http://elearning.surya.ac.id/course/view.php?id=365">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a></li>
 						</ul>
@@ -66,7 +66,7 @@
 													<li class="activity folder modtype_folder " id="module-1475">
 														<div class="mod-indent">
 															<div class="activityinstance">
-																<a class="" onclick="" href="http://elearning.surya.ac.id/mod/folder/view.php?id=1475"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/folder/1480305559/icon" class="iconlarge activityicon" alt=" " role="presentation">
+																<a class="" onclick="" href="{{route('makeFolder')}}"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/folder/1480305559/icon" class="iconlarge activityicon" alt=" " role="presentation">
 																			<span class="instancename">Lecture Notes
 																				<span class="accesshide "> Folder</span>
 																			</span>

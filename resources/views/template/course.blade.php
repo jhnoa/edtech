@@ -7,19 +7,19 @@
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
 							<li>
-								<a href="http://elearning.surya.ac.id/">Home</a>
+								<a href="{{ route('index') }}">Home</a>
 							</li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
-								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/">My Courses</a>
+								<span class="arrow sep">&gt;</span><a href="{{route('myCourse')}}">My Courses</a>
 							</li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
-								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/">Human Computer Interaction</a>
+								<span class="arrow sep">&gt;</span>Human Computer Interaction
 							</li>
 						</ul>
 					</div>

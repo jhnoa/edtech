@@ -6,7 +6,7 @@
 				<div class="navbar clearfix">
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
-							<li><a href="http://elearning.surya.ac.id/">Home</a></li>
+							<li><a href="{{ route('index') }}">Home</a></li>
 							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/my/">My Course</a></li>
 							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/course/index.php?categoryid=15">Human Computer Interaction</a></li>
 							<li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&gt;</span> <a href="http://elearning.surya.ac.id/course/index.php?categoryid=61">Semester Genap - 2014/2015</a></li>

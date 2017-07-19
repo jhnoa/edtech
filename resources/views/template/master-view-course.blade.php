@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-	<head>
-	<title>@yield('title') | Surya University Learning Management System</title>
-	
+  <head>
+  <title>@yield('title') | Surya University Learning Management System</title>
+  
   @include('template.meta')
 
-	</head>
+  </head>
 
 <body>
 
