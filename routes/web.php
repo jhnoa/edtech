@@ -21,7 +21,8 @@ Auth::routes();
 Route::get('learning','LandingController@learning')->name('myCourse');
 Route::get('learning/view','LandingController@course')->name('viewCourse');
 Route::get('learning/view/folder','LandingController@makeFolder')->name('makeFolder');
-Route::get('learning/view/kuis','LandingController@sebelumKuis')->name('sebelumKuis');
+Route::get('learning/view/start-kuis','LandingController@sebelumKuis')->name('sebelumKuis');
+Route::get('learning/view/kuis','LandingController@kuis')->name('kuis');
 
 //Survey
 Route::get('survey','LandingController@survey')->name('survey');

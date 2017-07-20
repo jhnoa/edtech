@@ -2890,3 +2890,9 @@ dl {
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
 }
+
+/*Soal kuis*/
+.kuis{
+  margin-top: 2%;
+  height: 35px;
+}

@@ -31,7 +31,7 @@
 						<li>Waktu : 60 menit</li>
 						<li>Isi Deskripsi lainnya</li>
 					  </div>					  
-					  <button type="submit" class="btn btn-default">Start</button>
+					  <a href="{{route('kuis')}}" style="padding-left: 4%;"><button type="submit" class="btn btn-default" >Start</button></a>
 					</div>					
 				</div>
 			</div>
