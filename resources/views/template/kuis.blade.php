@@ -25,7 +25,7 @@
 							    <br>
 						    </form>
                  	</div>
-                 	<div class="soal-checkbox">
+                 	<div class="soal-checkbox" style="margin-bottom: 2%;">
                  		<a style="color: #000;">2. Pertanyaan checkbox</a>
                  		 <div class="pilihan-jawaban" style="padding-left: 2%;">
                  		 	<div>
@@ -41,6 +41,12 @@
 						    	<label><input type="checkbox" id="coding" name="quiz" value="coding">
 						    	<c>Checkbox 4</c></label></div>		
 						 </div>			
+                 	</div>
+                 	<div class="soal-essay">
+                 		<a style="color: #000;">3. Pertanyaan essay</a>
+                 		<div class="jawaban-essay">
+                 			<textarea type="text" id="fname" name="firstname" placeholder="Your Answer"></textarea>
+                 		</div>                 			
                  	</div>
               	 </div>
              </div>

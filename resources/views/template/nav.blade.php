@@ -5,7 +5,7 @@
     <li><a href="{{ route('index') }}">Home</a></li>
     <li><a href="forum">Forum</a></li>
     <li><a href="learning">Learning</a></li>
-    <li><a href="survey">Survey</a></li>
+    <li><a href="{{route('survey')}}">Survey</a></li>
     <li><a href="profile">Profile</a></li>
   
 @if(Auth::check())

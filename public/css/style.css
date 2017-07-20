@@ -2891,8 +2891,50 @@ dl {
     border-bottom-left-radius: 1em;
 }
 
+.btn-survey{
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 5%;
+  background:#e6e9fd;
+  width: 90%;
+}
+
+.btn-survey:hover{
+  background:#909eff;
+}
+
 /*Soal kuis*/
 .kuis{
   margin-top: 2%;
   height: 35px;
+}
+
+.pilihan-jawaban{
+  margin-bottom: : 10px;
+  margin-top: 10px;
+}
+
+.jawaban-essay{
+  padding-left: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#fname{
+  border-radius: 10px;
+  border-color: #1f70e9;
+  width: 90%;
+  min-height: 80px;
+  padding-left: 1%;
 }

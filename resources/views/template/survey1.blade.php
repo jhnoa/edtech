@@ -16,7 +16,9 @@
 					<span class="instancename">Buat Survey Baru
 						<span class="accesshide ">New Survey</span>
 					</span></a>
-
+					<div class="clearfix">
+            			<input class="btn-survey span12 btn-realto-form btn-large" value="Contoh Survey 1" type="submit">
+        			</div>
               	 </div>
              </div>
        </div>
