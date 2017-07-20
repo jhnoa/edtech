@@ -2860,3 +2860,33 @@ dl {
     margin-left: -60%;
     padding-right: 10%;
 }
+
+/*survey*/
+#page-content-survey{
+    position: relative;
+    clear: both;
+    float: left;
+    width: 80%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.64);
+    left: 10%;
+    padding-left: 3%;
+    margin-top: 11%;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 20%;
+}
+
+#region-post-box-survey{
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 49.2%;
+    margin-left: -500px;
+    background: #fff;
+    height:100%;
+    padding-bottom: 5%;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}

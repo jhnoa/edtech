@@ -79,7 +79,7 @@
 							  									</div>
 							  									<div class="assign overview">
 							  										<div class="name">Assignment: 
-							  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1599">Quiz Computer Graphic
+							  											<a title="Assignment" href="{{route('sebelumKuis')}}">Quiz Computer Graphic
 							  											</a>
 							  										</div>
 							  										<div class="info">Due date: Wednesday, 29 April 2015, 1:45 PM</div>
