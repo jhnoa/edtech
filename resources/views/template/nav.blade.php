@@ -3,11 +3,11 @@
   <h1>Menu</h1>
   <ul>
     <li><a href="{{ route('index') }}">Home</a></li>
-    <li><a href="forum">Forum</a></li>
+    <li><a href="{{ route('forum') }}">Forum</a></li>
     <li><a href="learning">Learning</a></li>
     <li><a href="{{route('survey')}}">Survey</a></li>
     <li><a href="profile">Profile</a></li>
-  
+
 @if(Auth::check())
 <li>Welcome back, {{ Auth::user()->name }}</li>
 <a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
@@ -70,7 +70,7 @@
       </div>
   </div>
   <div class="form-group">
-      
+
   </div>
 </form>
 @endif

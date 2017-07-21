@@ -48,8 +48,7 @@
 html,
 body {
   margin: 0px;
-  overflow-y: scroll;
-  overflow-x: hidden;;
+  overflow: auto;
 }
 body {
   background: #272222 url(img/logo-big.png) -150px 35px no-repeat;
@@ -710,7 +709,7 @@ a:hover {
   color: #ccc;
   text-transform: uppercase;
   z-index: 3001;
-  line-height: 5px;
+  line-height: 20px;
   position: relative;
   text-align: center;
   z-index: 0;
@@ -1136,27 +1135,14 @@ keyframes coverShake 100% {
 
 #region-post-box {
     float: left;
-    width: 113.7%;
+    width: 114%;
     position: relative;
-    left: 49.2%;
+    left: 50%;
     margin-left: -500px;
     background: #fff;
-    height:100%;
-    padding-bottom: 5%;
+  height:100%;
 }
 
-#region_365_assign_inner{
-  background-color: #fff;
-  width: 100.3%;
-  position: relative;
-  left: 53.4%;
-  margin-left: -500px;
-  background: #fff;
-  height: 100%;
-  padding-left: 3%;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-}
 
 #page-content {
     padding-bottom: 20%;
@@ -1183,9 +1169,7 @@ keyframes coverShake 100% {
     height: 60%;
     padding-left: 10%;
     padding-right: 2%;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    background-color: #FFF;
+    border-radius: 10px;
 }
 
 #region-main-box::-webkit-scrollbar-track
@@ -1212,13 +1196,6 @@ keyframes coverShake 100% {
                      color-stop(0.86, rgb(28,58,148)));
 }
 
-#region-main-box-course{
-    height: 60%;
-    padding-left: 10%;
-    padding-right: 2%;
-    border-radius: 10px;
-}
-
 #site-news-forum{
   background-color: #fff;
   padding-left: 3%;
@@ -1239,8 +1216,6 @@ keyframes coverShake 100% {
     vertical-align: middle;
     font-size: 1em;
     text-transform: uppercase;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
 }
 
 
@@ -1460,7 +1435,6 @@ div.jcontrolsleft {
     height: 60%;
     padding-left: 3%;
     padding-top: 3%;
-    padding-bottom: 3%;
 }
 .table-deskripsi li{
     display: list-item;
@@ -2832,115 +2806,8 @@ keyframes coverUp 100% {
   margin: 16px 0;
 }
 
-/*pengumpulan tugas*/
-.boxaligncenter {
-    margin-left: auto;
-    margin-right: auto;
-}
-.gradingsummarytable, .feedbacktable, .lockedsubmission, .submissionsummarytable {
-    margin-top: 1em;
-}
-table {
-    font-size: 100%;
-}
 
-table.flexible .r0, table.generaltable .r0 {
-    background-color: #c8cfff;
-    height: 40px;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
-dl {
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: -60%;
-    padding-right: 10%;
-}
-
-/*survey*/
-#page-content-survey{
-    position: relative;
-    clear: both;
-    float: left;
-    width: 80%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.64);
-    left: 10%;
-    padding-left: 3%;
-    margin-top: 11%;
-    border-radius: 30px;
-    padding-top: 2%;
-    padding-right: 3%;
-    padding-bottom: 20%;
-}
-
-#region-post-box-survey{
-    float: left;
-    width: 100%;
-    position: relative;
-    left: 49.2%;
-    margin-left: -500px;
-    background: #fff;
-    height:100%;
-    padding-bottom: 5%;
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
-}
-
-.btn-survey{
-  display: inline-block;
-  padding: 10px 30px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 5%;
-  background:#e6e9fd;
-  width: 90%;
-}
-
-.btn-survey:hover{
-  background:#909eff;
-}
-
-/*Soal kuis*/
-.kuis{
-  margin-top: 2%;
-  height: 35px;
-}
-
-.pilihan-jawaban{
-  margin-bottom: : 10px;
-  margin-top: 10px;
-}
-
-.jawaban-essay{
-  padding-left: 2%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#fname{
-  border-radius: 10px;
-  border-color: #1f70e9;
-  width: 90%;
-  min-height: 80px;
-  padding-left: 1%;
-}
-
-
-/*FORUM*/
+/* FORUM---------------------------------------- */
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 *:after {
@@ -5857,82 +5724,4 @@ Colours and backgrounds for buttons.css
   width: 16px;
   height: 16px;
   line-height: 16px;
-}
-
-/*survey*/
-#page-content-survey{
-    position: relative;
-    clear: both;
-    float: left;
-    width: 80%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.64);
-    left: 10%;
-    padding-left: 3%;
-    margin-top: 11%;
-    border-radius: 30px;
-    padding-top: 2%;
-    padding-right: 3%;
-    padding-bottom: 20%;
-}
-
-#region-post-box-survey{
-    float: left;
-    width: 100%;
-    position: relative;
-    left: 49.2%;
-    margin-left: -500px;
-    background: #fff;
-    height:100%;
-    padding-bottom: 5%;
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
-}
-
-.btn-survey{
-  display: inline-block;
-  padding: 10px 30px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 5%;
-  background:#e6e9fd;
-  width: 90%;
-}
-
-.btn-survey:hover{
-  background:#909eff;
-}
-
-/*Soal kuis*/
-.kuis{
-  margin-top: 2%;
-  height: 35px;
-}
-
-.pilihan-jawaban{
-  margin-bottom: : 10px;
-  margin-top: 10px;
-}
-
-.jawaban-essay{
-  padding-left: 2%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#fname{
-  border-radius: 10px;
-  border-color: #1f70e9;
-  width: 90%;
-  min-height: 80px;
-  padding-left: 1%;
 }

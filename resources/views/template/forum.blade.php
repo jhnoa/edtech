@@ -7,13 +7,13 @@
 					<div class="breadcrumb"> <span class="accesshide">Page path</span>
 						<ul role="navigation">
 							<li>
-								<a href="http://elearning.surya.ac.id/">Home</a>
+								<a href="{{ route('index') }}">Home</a>
 							</li>
 							<li>
 								<span class="accesshide ">
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
-								<span class="arrow sep">&gt;</span><a href="http://elearning.surya.ac.id/my/" >FORUM</a>
+								<span class="arrow sep">&gt;</span><a href="{{ route('forum') }}" >FORUM</a>
 							</li>
 						</ul>
 					</div>
@@ -36,7 +36,7 @@
 								<dl class="icon forum_read">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
-																		<a href="#" class="forumtitle">Nama Matkul 1</a>
+																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 1</a>
 										</dt>
 											<dd class="posts"></dd>
 											<dd class="posts"></dd>

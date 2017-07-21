@@ -16,7 +16,7 @@
 <!-- Homepage
 ============================================= -->
 <main id="content" class="s-main" role="main" style="min-height: 435px;">
-  @include('template.content')
+  @include('template.forumView')
 </main>
 
   @include('template.footer')

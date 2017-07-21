@@ -27,6 +27,10 @@ Route::get('learning/view/kuis','LandingController@kuis')->name('kuis');
 //Survey
 Route::get('survey','LandingController@survey')->name('survey');
 
+//forum
+Route::get('forum','LandingController@forum1')->name('forum');
+Route::get('forum/view','LandingController@forum2')->name('forumView');
+Route::get('forum/view/detail','LandingController@forum3')->name('forumDetail');
 
 // Learning Dosen
 Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');
