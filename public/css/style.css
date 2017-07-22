@@ -5725,3 +5725,151 @@ Colours and backgrounds for buttons.css
   height: 16px;
   line-height: 16px;
 }
+
+/* Posting page styles
+----------------------------------------*/
+#format-buttons {
+  background-color: #fafafa;
+  border-color: #e7e7e7;
+}
+#format-buttons input,
+#format-buttons select {
+  background-color: transparent;
+  border: none;
+}
+#format-buttons input:hover,
+#format-buttons select:hover {
+  background-color: #e7e7e7;
+}
+#message-box textarea {
+  color: #333333;
+}
+/* Input field styles
+---------------------------------------- */
+.inputbox {
+  background-color: rgba(0, 0, 0, 0.025);
+  border-color: rgba(0, 0, 0, 0.05);
+  color: #46494f;
+}
+.inputbox:invalid {
+  border-color: #F3674A;
+  box-shadow: none;
+}
+.inputbox:-moz-placeholder {
+  color: #333333;
+}
+.inputbox::-webkit-input-placeholder {
+  color: #333333;
+}
+.inputbox:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.075);
+}
+.inputbox:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.075);
+}
+.inputbox:focus:-moz-placeholder {
+  color: transparent;
+}
+.inputbox:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* Posting page styles
+----------------------------------------*/
+/* Buttons used in the editor */
+#format-buttons {
+  border-style: solid;
+  border-width: 1px 1px 0;
+  /* margin: 0 250px 0 0;*/
+  width: auto;
+  padding: 5px;
+  border-radius: 3px 3px 0 0;
+}
+#format-buttons input,
+#format-buttons select {
+  display: inline-block;
+  line-height: 31px;
+  height: 33px;
+  padding: 0 15px;
+  vertical-align: middle;
+  -webkit-transition: background-color 0.1s ease-in;
+          transition: background-color 0.1s ease-in;
+}
+#format-buttons + #message-box textarea {
+  border-radius: 0 0 3px 3px;
+}
+/* Main message box */
+#message-box {
+  background-color: #fafafa;
+  width: auto;
+/*  margin: 0 250px 20px 0;*/
+}
+#message-box textarea {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  width: 450px;
+  height: 270px;
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  padding: 5px 20px 0;
+}
+textarea#message {
+  height: auto;
+}
+/* Emoticons panel */
+#smiley-box {
+  width: 230px;
+  float: right;
+}
+#smiley-box img {
+  margin: 3px;
+}
+/* Input field styles
+---------------------------------------- */
+.inputbox {
+  border: 1px solid transparent;
+  height: 33px;
+  padding: 0 20px;
+  -webkit-transition: border-color 0.1s ease-in, background-color 0.1s ease-in;
+          transition: border-color 0.1s ease-in, background-color 0.1s ease-in;
+  outline: none;
+  -webkit-appearance: none !important;
+}
+.inputbox:hover,
+.inputbox:focus {
+  border: 1px solid transparent;
+  outline-style: none;
+}
+input.inputbox {
+  background-color: #fafafa;
+  width: 100%;
+}
+input.medium {
+  width: 50%;
+}
+input.narrow {
+  width: 25%;
+}
+input.tiny {
+  width: 150px;
+}
+textarea.inputbox {
+  width: 85%;
+}
+.autowidth {
+
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}

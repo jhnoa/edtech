@@ -54,4 +54,8 @@ class LandingController extends Controller
     {
         return view('forum3',['title' => 'Forum']);
     }
+    public function forum4()
+    {
+        return view('forum4',['title' => 'Forum']);
+    }
 }

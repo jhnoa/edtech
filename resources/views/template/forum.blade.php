@@ -36,7 +36,9 @@
 								<dl class="icon forum_read">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
+																		<div class="list-inner">
 																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 1</a>
+																		</div>
 										</dt>
 											<dd class="posts"></dd>
 											<dd class="posts"></dd>
@@ -48,7 +50,9 @@
 								<dl class="icon forum_read_subforum">
 										<dt title="No unread posts">
 											<span class="ico_forum_read_subforum"></span>
-																	<a href="#" class="forumtitle">Nama Matkul 2</a>
+																		<div class="list-inner">
+																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 2</a>
+																		</div>
 										</dt>
 										<dd class="posts"></dd>
 										<dd class="posts"></dd>
@@ -56,17 +60,6 @@
 								</dl>
 							</li>
 
-							<li class="row">
-								<dl class="icon forum_read_subforum">
-										<dt title="No unread posts">
-											<span class="ico_forum_read_subforum"></span>
-																	<a href="#" class="forumtitle">Nama Matkul 3</a>
-										</dt>
-										<dd class="posts"></dd>
-										<dd class="posts"></dd>
-										<dd class="topics">9<dfn>Total Topics</dfn></dd>
-								</dl>
-							</li>
 
 						</ul>
 					</div>

@@ -59,6 +59,31 @@
 		</div>
   </div>
 
+	<div id="p70" class="post has-profile bg1">
+		<div class="inner">
+			<dl class="postprofile" id="profile70">
+				<dt class="no-profile-rank has-avatar">
+					<div class="avatar-container">
+						<a href="#" class="avatar"><img class="avatar" src="#" width="80" height="80" alt="User avatar"></a>
+					</div>
+							<a href="#" class="username">Nama pelajar</a>
+				</dt>
+				</dl>
+					<div class="postbody">
+							<div id="post_content70">
+									<h3><a href="#p70">Re: Contoh post/comment</a></h3>
 
-  <a href="#" class="button font-icon" title="reply topic">
-  <i class="fa fa-reply"></i> reply					</a>
+										<p class="author"><a href="#">07 Dec 2015, 20:20</a> </p>
+											<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+											</div>
+							</div>
+					</div>
+			</div>
+		</div>
+
+
+		<div id="message-box">
+				<textarea name="message" id="message" rows="15" cols="76" tabindex="4" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" class="inputbox" style="position: relative;"></textarea>
+		</div>
+
+<input type="submit" accesskey="s" tabindex="6" name="post" value="submit post" class="button font-icon">

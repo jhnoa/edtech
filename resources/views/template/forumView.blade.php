@@ -82,5 +82,5 @@
 				</div>
 	</div>
 
-						<a href="#" class="button font-icon" title="Post a new topic">
+						<a href="{{ route('forumCreate') }}" class="button font-icon" title="Post a new topic">
 						<i class="fa fa-pencil"></i>New Topic					</a>
