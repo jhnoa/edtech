@@ -28,6 +28,10 @@ class HomeController extends Controller
 
     public function dosen()
     {
-        return view('dosen.index',['title' => 'Home']);
+        return view('dosen.landing',['title' => 'Home']);
+    }
+    public function dosenAssign()
+    {
+        return view('dosen.landing',['title' => 'Assigned Subject']);
     }
 }
