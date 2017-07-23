@@ -1133,15 +1133,6 @@ keyframes coverShake 100% {
     background-color: #fffbfb;
 }
 
-#region-post-box {
-    float: left;
-    width: 114%;
-    position: relative;
-    left: 50%;
-    margin-left: -500px;
-    background: #fff;
-  height:100%;
-}
 
 /* Course
  ================================ */
@@ -6009,11 +6000,13 @@ div.jcontrolsleft {
     float: left;
     width: 113.7%;
     position: relative;
-    left: 49.2%;
+    left: 52%;
     margin-left: -500px;
     background: #fff;
     height:100%;
     padding-bottom: 5%;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 #region_365_assign_inner{

@@ -2,7 +2,9 @@
     ============================================= -->
   	<div class="row">
   		<div class="col-md-12">
-  			<div style="width: 100%; height: 20rem;">a</div>
+  			<div style="width: 100%; height: 15rem;">
+  				
+  			</div>
   		</div>
   		<div class="col-md-2">
   			<div style="width: 100%; height: 2rem; background-color: #FFF"></div>
