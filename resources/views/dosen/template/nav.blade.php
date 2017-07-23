@@ -2,18 +2,9 @@
 	<div class="sidebar content-box" style="display: block;">
         <ul class="nav">
             <!-- Main menu -->
-            @if($title == 'Home')
-            	<li class="current">
-            @else
-            	<li>
-            @endif
+            <li {{ Request::routeIs('adminIndex') ? 'class=current' : '' }}>
             <a href="{{ route('adminIndex') }}"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-            
-            @if($title == 'Assigned Subject')
-            	<li class="current">
-            @else
-            	<li>
-            @endif
+            <li {{ Request::routeIs('adminAssign') ? 'class=current' : '' }}>
             <a href="{{ route('adminAssign') }}"><i class="glyphicon glyphicon-calendar"></i> Assigned Subject</a></li>
             
             <li><a href="stats.html"><i class="glyphicon glyphicon-stats"></i> Statistics (Charts)</a></li>

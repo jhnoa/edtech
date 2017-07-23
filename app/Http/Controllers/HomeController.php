@@ -21,6 +21,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         return view('landing',['title' => 'Home']);
@@ -32,6 +33,31 @@ class HomeController extends Controller
     }
     public function dosenAssign()
     {
-        return view('dosen.landing',['title' => 'Assigned Subject']);
+        return view('dosen.assigned',
+            [
+                'title' => 'Assigned Subject',
+                'assigned' => [
+                    'Fisika Dasar',
+                    'Fisika Modern',
+                    'Fisika Energy',
+                    'Fisika Material'
+            ]
+        ]);
+    }
+
+    public function dosenAssignDetail($course)
+    {
+        return view('dosen.assignedDetail',
+            [
+                'title' => 'Assigned Subject',
+                'assigned' => [
+                    'Fisika Dasar',
+                    'Fisika Modern',
+                    'Fisika Energy',
+                    'Fisika Material'
+                    ],
+                'course' => $course
+            ]
+        );
     }
 }

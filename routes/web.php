@@ -36,6 +36,7 @@ Route::get('forum/view/create','LandingController@forum4')->name('forumCreate');
 // Learning Dosen
 Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');
 Route::get('admin/assign', 'HomeController@dosenAssign')->name('adminAssign');
+Route::get('admin/assign/{course}', 'HomeController@dosenAssignDetail')->name('adminAssign/{course}');
 
 //Route::get('home', 'LandingController@index');
 //Route::get('logout', 'HomeController@index');
