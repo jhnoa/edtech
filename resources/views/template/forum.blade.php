@@ -24,13 +24,13 @@
 
 		<div class="forumbg">
 					<div class="inner">
-					<ul class="topiclist forums">
+					<ul class="topiclist forums" style="padding-left: 0px;">
 							<li class="row">
 								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
 																		<div class="list-inner">
-																		<a href="http://localhost:8000/forum/view" class="forumtitle">Nama Matkul 1</a>
+																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 1</a>
 																		</div>
 										</dt>
 											<dd class="posts"></dd>

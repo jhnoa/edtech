@@ -32,7 +32,7 @@
 
 		<div class="forumbg">
 					<div class="inner">
-			<ul class="topiclist forums">
+			<ul class="topiclist forums" style="padding-left: 0px;" >
 							<li class="row">
 								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">

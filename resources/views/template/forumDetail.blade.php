@@ -86,4 +86,4 @@
 				<textarea name="message" id="message" rows="15" cols="76" tabindex="4" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" class="inputbox" style="position: relative;"></textarea>
 		</div>
 
-<input type="submit" accesskey="s" tabindex="6" name="post" value="submit post" class="button font-icon">
+<input type="submit" accesskey="s" tabindex="6" name="post" value="submit post" class="button font-icon" style="margin-top: 20px;">
