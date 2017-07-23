@@ -20,7 +20,7 @@
 	<!-- END NAVBAR -->
 		
 		   <div id="region-main-box-course">
-			   <div id="region-post-box" style="border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;min-height: 400px;">
+			   <div id="region-post-box" style="border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;min-height: 400px;left: 49.2%;">
 				  <div id="region-main-wrap">
 					 <div id="region-main-pad">
 					   <div id="region-main">

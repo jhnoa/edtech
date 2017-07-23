@@ -7,7 +7,7 @@
     <li><a href="{{ route('myCourse') }}">Learning</a></li>
     <li><a href="{{route('survey')}}">Survey</a></li>
     <li><a href="{{ route('adminIndex') }}">Admin / Dosen</a></li>
-    <li><a href="profile">Profile</a></li>
+    <li><a href="{{route('profile')}}">Profile</a></li>
 
 @if(Auth::check())
 <li>Welcome back, {{ Auth::user()->name }}</li>
