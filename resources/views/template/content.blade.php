@@ -1,6 +1,14 @@
  <!-- Search form
     ============================================= -->
-	<div id="page-content">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<div style="width: 100%; height: 20rem;">a</div>
+  		</div>
+  		<div class="col-md-2">
+  			<div style="width: 100%; height: 2rem; background-color: #FFF"></div>
+  		</div>
+  		<div class="col-md-10">
+  			<div id="page-content">
 	<div id="hometopblocks">
 
 	<!-- START CUSTOM TOPLINKS REGION  -->
@@ -13,18 +21,41 @@
 	<!-- END CUSTOM HOMEBLOCK REGION -->
 
 	</div>
+
+
 	<!-- START CUSTOM SEARCH REGION  -->
 	
 	<!-- END CUSTOM SEARCH REGION -->
 		<!-- <div id="sitename">Surya University</div> -->
 
-       <div id="region-main-box">
+    
+       <div id="region-main-box"> 
            <div id="region-post-box">
               <div id="region-main-wrap">
                  <div id="region-main-pad">
                    <div id="region-main">
                      <div class="region-content">
-                            <div role="main"><span id="maincontent"></span><a href="#skipsitenews" class="skip-block">Skip site news</a><div id="site-news-forum"><h2 class="headingblock header" style="background-color: #fff;">Site news</h2><a id="p759"></a><div class="forumpost clearfix firstpost starter"><div class="row header clearfix" style="background-color: #fff;"><div class="left picture"><a href="http://elearning.surya.ac.id/user/profile.php?id=211"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/u/f2" alt="Picture of setiyani setiyani" title="Picture of setiyani setiyani" class="userpicture defaultuserpic" width="35" height="35"></a></div><div class="topic firstpost starter"><div class="subject">Miss Enrollment Course</div><div class="author">by <a href="http://elearning.surya.ac.id/user/view.php?id=211&amp;course=1">setiyani setiyani</a> - Friday, 2 September 2016, 9:27 AM</div></div></div><div class="row maincontent clearfix"><div class="left"><div class="grouppictures">&nbsp;</div></div><div class="no-overflow"><div class="content"><div class="posting fullpost"><p>Diinformasikan kepada Mahasiswa,</p>
+                            <div role="main" style="padding-left: 5%;">
+                            	<span id="maincontent"></span><a href="#skipsitenews" class="skip-block">Skip site news</a>
+                            	<div id="site-news-forum">
+                            		<h2 class="headingblock header" style="background-color: #fff;">Site news</h2><a id="p759"></a>
+                            			<div class="forumpost clearfix firstpost starter">
+                            				<div class="row header clearfix" style="background-color: #fff;">
+                            					<div class="left picture"><a href="http://elearning.surya.ac.id/user/profile.php?id=211"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/u/f2" alt="Picture of setiyani setiyani" title="Picture of setiyani setiyani" class="userpicture defaultuserpic" width="35" height="35"></a>
+                            					</div>
+                            					<div class="topic firstpost starter">
+                            						<div class="subject">Miss Enrollment Course</div>
+                        							<div class="author">by <a href="http://elearning.surya.ac.id/user/view.php?id=211&amp;course=1">setiyani setiyani</a> - Friday, 2 September 2016, 9:27 AM
+                        							</div>
+                            					</div>
+                            				</div>
+                            				<div class="row maincontent clearfix">
+                            					<div class="left">
+                            						<div class="grouppictures">&nbsp;</div>
+                            					</div>
+                            					<div class="no-overflow">
+                            						<div class="content">
+                            							<div class="posting fullpost"><p>Diinformasikan kepada Mahasiswa,</p>
 						Naskah Lorem Ipsum standar yang digunakan sejak tahun 1500an
 
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -36,14 +67,23 @@
 						Terjemahan tahun 1914 oleh H. Rackham
 
 						"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-                   </div>
-                 </div>
-               </div>
-
-                
-              </div>
-        </div>
-    </div>
+                   											</div>
+                 										</div>
+               									</div>                
+              								</div>
+        								</div>
+    							</div>
+    						</div>
+    				</div>
+    			   </div>
+    			  </div>
+    			 </div>
+    			</div>
+    		   </div>
+	</div>
+  		</div>
+  	</div>
+	    		   
 
 <script type="text/javascript">
 	$(function () {

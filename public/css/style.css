@@ -1143,66 +1143,6 @@ keyframes coverShake 100% {
   height:100%;
 }
 
-
-#page-content {
-    padding-bottom: 20%;
-}
-
-#page-content {
-  position: relative;
-    clear: both;
-    float: left;
-    width: 75%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.64);
-    left: 20%;
-    padding-left: 3%;
-    margin-top: 11%;
-    border-radius: 30px;
-    padding-top: 2%;
-    padding-right: 3%;
-}
-
-#region-main-box{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 60%;
-    padding-left: 10%;
-    padding-right: 2%;
-    border-radius: 10px;
-}
-
-#region-main-box::-webkit-scrollbar-track
-{
-  border-radius: 10px;
-  background-color: #F5F5F5;
-
-}
-
-#region-main-box::-webkit-scrollbar
-{
-  width: 10px;
-  background-color: #F5F5F5;
-}
-
-#region-main-box::-webkit-scrollbar-thumb
-{
-  border-radius: 10px;
-  background-image: -webkit-gradient(linear,
-                     left bottom,
-                     left top,
-                     color-stop(0.44, rgb(122,153,217)),
-                     color-stop(0.72, rgb(73,125,189)),
-                     color-stop(0.86, rgb(28,58,148)));
-}
-
-#site-news-forum{
-  background-color: #fff;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-
 /* Course
  ================================ */
 
@@ -6097,12 +6037,11 @@ div.jcontrolsleft {
   position: relative;
     clear: both;
     float: left;
-    width: 75%;
+    width: 85%;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.64);
-    left: 20%;
+    left: 2%;
     padding-left: 3%;
-    margin-top: 11%;
     border-radius: 30px;
     padding-top: 2%;
     padding-right: 3%;
@@ -6154,5 +6093,13 @@ div.jcontrolsleft {
   background-color: #fff;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+/*gambar clock*/
+#gambar-clock{
+  background-color: #fff;
+  min-height: 50px;
+  width: 10%;
+  margin-top: 10%;
 }
 
