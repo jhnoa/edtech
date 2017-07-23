@@ -1220,7 +1220,7 @@ keyframes coverShake 100% {
 
 
 .block .header {
-    background-color: #009933;
+    background-color: #788aff;
 }
 
 .block .header {
@@ -5873,3 +5873,286 @@ input[type="search"]::-webkit-search-results-decoration {
 input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
+
+/*pengumpulan tugas*/
+.boxaligncenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+.gradingsummarytable, .feedbacktable, .lockedsubmission, .submissionsummarytable {
+    margin-top: 1em;
+}
+table {
+    font-size: 100%;
+}
+
+table.flexible .r0, table.generaltable .r0 {
+    background-color: #c8cfff;
+    height: 40px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: -60%;
+    padding-right: 10%;
+}
+
+/*survey*/
+#page-content-survey{
+    position: relative;
+    clear: both;
+    float: left;
+    width: 80%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.64);
+    left: 10%;
+    padding-left: 3%;
+    margin-top: 11%;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 20%;
+}
+
+#region-post-box-survey{
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 49.2%;
+    margin-left: -500px;
+    background: #fff;
+    height:100%;
+    padding-bottom: 5%;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.btn-survey{
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 5%;
+  background:#e6e9fd;
+  width: 90%;
+}
+
+.btn-survey:hover{
+  background:#909eff;
+}
+
+/*Soal kuis*/
+.kuis{
+  margin-top: 2%;
+  height: 35px;
+}
+
+.pilihan-jawaban{
+  margin-bottom: : 10px;
+  margin-top: 10px;
+}
+
+.jawaban-essay{
+  padding-left: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#fname{
+  border-radius: 10px;
+  border-color: #1f70e9;
+  width: 90%;
+  min-height: 80px;
+  padding-left: 1%;
+}
+
+/* Course
+ ================================ */
+ 
+ #headerstrip {
+    background-color: #788aff;
+}
+
+#headerstrip {
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+
+.block .header {
+    background-color: #788aff;
+}
+
+.block .header {
+    border: none;
+    padding: 6px 0 4px;
+    width: 100%;
+}
+
+.block .header {
+    margin: 0 0 0 !important;
+    padding-top: 0 !important;
+    border-bottom: 0px none;
+}
+
+.breadcrumb {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: -8px;
+    color: #fff;
+}
+.breadcrumb {
+    float: left;
+  background-color:#788aff;
+}
+.breadcrumb ul {
+    color: #fff;
+    line-height: 35px;
+}
+
+.breadcrumb ul {
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    list-style: none;
+}
+.accesshide {
+    position: absolute;
+    left: -10000px;
+    font-weight: normal;
+    font-size: 1em;
+}
+.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb li, .navbutton div, .navbutton form {
+    display: inline;
+}
+div.jcontrolsleft {
+    max-width: 530px;
+}
+
+div.jcontrolsleft {
+    margin-left: 15px;
+    font-weight: 600;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+#region-post-box {
+    float: left;
+    width: 113.7%;
+    position: relative;
+    left: 49.2%;
+    margin-left: -500px;
+    background: #fff;
+    height:100%;
+    padding-bottom: 5%;
+}
+
+#region_365_assign_inner{
+  background-color: #fff;
+  width: 100.3%;
+  position: relative;
+  left: 53.4%;
+  margin-left: -500px;
+  background: #fff;
+  height: 100%;
+  padding-left: 3%;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+#page-content {
+    padding-bottom: 20%;
+}
+
+#page-content {
+  position: relative;
+    clear: both;
+    float: left;
+    width: 75%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.64);
+    left: 20%;
+    padding-left: 3%;
+    margin-top: 11%;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-right: 3%;
+}
+
+#region-main-box{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 60%;
+    padding-left: 10%;
+    padding-right: 2%;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #FFF;
+}
+
+#region-main-box::-webkit-scrollbar-track
+{ 
+  border-radius: 10px;
+  background-color: #F5F5F5;
+
+}
+
+#region-main-box::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#region-main-box::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+                     left bottom,
+                     left top,
+                     color-stop(0.44, rgb(122,153,217)),
+                     color-stop(0.72, rgb(73,125,189)),
+                     color-stop(0.86, rgb(28,58,148)));
+}
+
+#region-main-box-course{
+    height: 60%;
+    padding-left: 10%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+#site-news-forum{
+  background-color: #fff;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
