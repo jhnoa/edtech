@@ -1,4 +1,4 @@
-<div id="page-content">
+<div id="page-content-survey">
 	<!-- START NAVBAR -->
 		<div id="headerstrip">
 			<div class="jcontrolsleft">
@@ -24,16 +24,9 @@
 
 		<div class="forumbg">
 					<div class="inner">
-					<ul class="topiclist">
-						<li class="header">
-							<dl class="headerstrip">
-								<dt><div class="list-inner">FORUM</div></dt>
-							</dl>
-						</li>
-					</ul>
-					<ul class="topiclist forums">
+					<ul class="topiclist forums" style="padding-left: 0px;">
 							<li class="row">
-								<dl class="icon forum_read">
+								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
 																		<div class="list-inner">
@@ -47,9 +40,9 @@
 							</li>
 
 							<li class="row">
-								<dl class="icon forum_read_subforum">
+								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">
-											<span class="ico_forum_read_subforum"></span>
+											<span class="ico_forum_read_subforum" ></span>
 																		<div class="list-inner">
 																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 2</a>
 																		</div>
