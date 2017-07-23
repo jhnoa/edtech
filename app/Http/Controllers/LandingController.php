@@ -36,10 +36,15 @@ class LandingController extends Controller
     {
         return view('learning-kuis',['title' => 'Kuis']);
     }
-
+    /*survey*/
     public function survey()
     {
         return view('survey',['title' => 'Survey']);
+    }
+
+    public function survey2()
+    {
+       return view('survey-view',['title' => 'Survey']); 
     }
     /* forum */
     public function forum1()
@@ -63,4 +68,5 @@ class LandingController extends Controller
     {
         return view('profile',['title' => 'Profile']);
     }
+
 }
