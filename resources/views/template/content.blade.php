@@ -1,7 +1,12 @@
  <!-- Search form
     ============================================= -->
   	<div class="row">
-  		<div class="col-md-12">
+  		<div class="col-md-offset-6 col-md-2">
+  			<div style="width: 100%; height: 15rem;">
+  				
+  			</div>
+  		</div>
+  		<div class="col-md-offset-4">
   			<div style="width: 100%; height: 15rem;">
   				
   			</div>
