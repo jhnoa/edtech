@@ -1,4 +1,4 @@
-<div id="page-content">
+<div id="page-content" style="top: 150px;width: 75%;left: 20%;">
 	<!-- START NAVBAR -->
 		<div id="headerstrip">
 			<div class="jcontrolsleft">		

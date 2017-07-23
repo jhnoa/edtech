@@ -6040,6 +6040,21 @@ div.jcontrolsleft {
     padding-right: 3%;
 }
 
+#page-content-noclock{
+  position: relative;
+  clear: both;
+  float: left;
+  width: 75%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.64);
+  left: 20%;
+  padding-left: 3%;
+  border-radius: 30px;
+  padding-top: 2%;
+  padding-right: 3%;
+  top: 150px;
+}
+
 #region-main-box{
     overflow-y: scroll;
     overflow-x: hidden;
