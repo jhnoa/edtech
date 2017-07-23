@@ -1,4 +1,4 @@
-<div id="page-content">
+<div id="page-content-survey">
 	<!-- START NAVBAR -->
 		<div id="headerstrip">
 			<div class="jcontrolsleft">
