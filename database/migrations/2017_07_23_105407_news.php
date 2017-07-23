@@ -18,7 +18,7 @@ class News extends Migration
             $table->integer('userId');
             $table->string('content');
             $table->timestamps();
-            $table->foreign('userId')->references('id')->on('users');
+            //$table->foreign('userId')->references('id')->on('users');
         });
     }
 

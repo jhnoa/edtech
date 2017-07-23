@@ -60,6 +60,34 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
+                            <label for="type" class="col-md-4 control-label">Type</label>
+
+                            <div class="col-md-6">
+                                <input id="type" type="text" class="form-control" name="type" value="{{ old('type') }}" required>
+
+                                @if ($errors->has('type'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('type') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('major') ? ' has-error' : '' }}">
+                            <label for="major" class="col-md-4 control-label">Major</label>
+
+                            <div class="col-md-6">
+                                <input id="major" type="text" class="form-control" name="major" value="{{ old('major') }}" required>
+
+                                @if ($errors->has('major'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('major') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
