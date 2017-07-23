@@ -1,4 +1,4 @@
-<div id="page-content">
+<div id="page-content-survey">
 	<!-- START NAVBAR -->
 		<div id="headerstrip">
 			<div class="jcontrolsleft">
@@ -39,19 +39,17 @@
 
 
 		<div class="inner">
-          <dt><div class="list-inner">CREATE TOPIC</div></dt>
-        </dl>
-
+			<div class="list-inner" style="padding-top: 10px;">CREATE TOPIC</div>
 		</div>
 
 
 <div class="inner">
 	<fieldset class="fields1">
 
-	<dl style="clear: left;">
-		<dt><label for="subject">Subject:</label></dt>
-		<dd><input type="text" name="subject" id="subject" size="45" maxlength="120" tabindex="2" value="" class="inputbox autowidth"></dd>
-	</dl>
+		<dl style="clear: left; margin-left: 0px;">
+				<dt><label for="subject">Subject:</label></dt>
+				<dd><input type="text" name="subject" id="subject" size="45" maxlength="120" tabindex="2" value="" class="inputbox autowidth"></dd>
+		</dl>
 
 
 <script type="text/javascript">
