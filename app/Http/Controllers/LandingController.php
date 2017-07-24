@@ -46,6 +46,10 @@ class LandingController extends Controller
     {
        return view('survey-view',['title' => 'Survey']); 
     }
+    public function survey3()
+    {
+        return view('survey-makeSurvey',['title' => 'Survey']);
+    }
     /* forum */
     public function forum1()
     {

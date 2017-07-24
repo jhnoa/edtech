@@ -27,6 +27,7 @@ Route::get('learning/view/kuis','LandingController@kuis')->name('kuis');
 //Survey
 Route::get('survey','LandingController@survey')->name('survey');
 Route::get('survey/view','LandingController@survey2')->name('surveyView');
+Route::get('survey/makeSurvey','LandingController@survey3')->name('surveyMake');
 
 //forum
 Route::get('forum','LandingController@forum1')->name('forum');

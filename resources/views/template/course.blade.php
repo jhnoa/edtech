@@ -56,67 +56,67 @@
 										 			<div class="commands"></div>
 										 		</div>
 										 	 </div>
-										 	 <div class="content">
-										 	 	<div class="course_list">
-										  			<div id="course-365" class="box coursebox">
-										  				<div class="course_title">
-										  					<h2 class="title">
-										  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>
-										  					</h2>
-										  					<div class="box flush"></div>
-										  				</div>
-										  				<div class="activity_info">
-										  					<div class="activity_overview">
-										  						<div id="region_365_assign" class="collapsibleregion  collapsed" style="height: 25px;">
-										  							<div id="region_365_assign_sizer">
-										  								<div id="region_365_assign_caption" class="collapsibleregioncaption" title="Click to expand or collapse">
-										  									<a href="#">
-											  									<a href="http://elearning.surya.ac.id/mod/assign/index.php?id=365">
-											  										<img class="iconlarge" alt="Assignment" title="Assignment" src="http://elearning.surya.ac.id/theme/image.php/rocket/mod_assign/1480305559/icon">
-											  									</a>
-										  									</a>You have assignments that need attention 
-										  								</div>
-										  								<div id="region_365_assign_inner" class="collapsibleregioninner">
-										  									<div class="assign overview">
-										  										<div class="name">Assignment: 
-										  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1594">Tugas Membuat Grafik
-										  											</a>
-										  										</div>
-										  										<div class="info">Due date: Wednesday, 29 April 2015, 5:00 PM</div>
-										  										<div class="details">My submission: Submitted for grading, Not graded</div>
-										  									</div>
-										  									<div class="assign overview">
-										  										<div class="name">Assignment: 
-										  											<a title="Assignment" href="{{route('sebelumKuis')}}">Quiz Computer Graphic
-										  											</a>
-										  										</div>
-										  										<div class="info">Due date: Wednesday, 29 April 2015, 1:45 PM</div>
-										  										<div class="details">My submission: Submitted for grading, Not graded</div>
-										  									</div>
-										  									<div class="assign overview">
-										  										<div class="name">Assignment: 
-										  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1851">Kuis Pertemuan ke-10
-										  											</a>
-										  										</div>
-										  										<div class="info">Due date: Wednesday, 3 June 2015, 4:00 PM</div>
-										  										<div class="details">My submission: Submitted for grading, Not graded</div>
-										  									</div>
-																			  <div class="assign overview">
-																				  <div class="name">Assignment: 
-																				  	<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1969">UAS - Tugas Kelompok</a>
-																				  </div>
-																				  <div class="info">Due date: Friday, 10 July 2015, 12:00 PM</div>
-																				  <div class="details">My submission: Not submitted yet, Not graded</div>
-																			  </div>
-																		</div>
-																	</div>
-																</div>
+							 	 <div class="content">
+							 	 	<div class="course_list">
+							  			<div id="course-365" class="box coursebox">
+							  				<div class="course_title">
+							  					<h2 class="title">
+							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>
+							  					</h2>
+							  					<div class="box flush"></div>
+							  				</div>
+							  				<div class="activity_info">
+							  					<div class="activity_overview">
+							  						<div id="region_365_assign" class="collapsibleregion  collapsed" style="height: 25px;">
+							  							<div id="region_365_assign_sizer">
+							  								<div id="region_365_assign_caption" class="collapsibleregioncaption" title="Click to expand or collapse">
+							  									<a href="#">
+								  									<a href="http://elearning.surya.ac.id/mod/assign/index.php?id=365">
+								  										<img class="iconlarge" alt="Assignment" title="Assignment" src="http://elearning.surya.ac.id/theme/image.php/rocket/mod_assign/1480305559/icon">
+								  									</a>
+							  									</a>You have assignments that need attention 
+							  								</div>
+							  								<div id="region_365_assign_inner" class="collapsibleregioninner">
+							  									<div class="assign overview">
+							  										<div class="name">Assignment: 
+							  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1594">Tugas Membuat Grafik
+							  											</a>
+							  										</div>
+							  										<div class="info">Due date: Wednesday, 29 April 2015, 5:00 PM</div>
+							  										<div class="details">My submission: Submitted for grading, Not graded</div>
+							  									</div>
+							  									<div class="assign overview">
+							  										<div class="name">Assignment: 
+							  											<a title="Assignment" href="{{route('sebelumKuis')}}">Quiz Computer Graphic
+							  											</a>
+							  										</div>
+							  										<div class="info">Due date: Wednesday, 29 April 2015, 1:45 PM</div>
+							  										<div class="details">My submission: Submitted for grading, Not graded</div>
+							  									</div>
+							  									<div class="assign overview">
+							  										<div class="name">Assignment: 
+							  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1851">Kuis Pertemuan ke-10
+							  											</a>
+							  										</div>
+							  										<div class="info">Due date: Wednesday, 3 June 2015, 4:00 PM</div>
+							  										<div class="details">My submission: Submitted for grading, Not graded</div>
+							  									</div>
+																  <div class="assign overview">
+																	  <div class="name">Assignment: 
+																	  	<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1969">UAS - Tugas Kelompok</a>
+																	  </div>
+																	  <div class="info">Due date: Friday, 10 July 2015, 12:00 PM</div>
+																	  <div class="details">My submission: Not submitted yet, Not graded</div>
+																  </div>
 															</div>
 														</div>
-														<div class="box flush"></div>
 													</div>
 												</div>
-											 </div>
+											</div>
+											<div class="box flush"></div>
+										</div>
+									</div>
+								 </div>
 								   		  </div>
 									  </div>
 									 </div>

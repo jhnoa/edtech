@@ -12,7 +12,7 @@
 
                <div id="region-main">
                  <div class="region-content" style="margin-top: 2%;padding-left: 2%;"> 
-					<a class="" onclick="" href=""><img src="img/plus-sign.png" class="iconlarge activityicon" alt=" " role="presentation" style="width: 3%;">
+					<a class="" onclick="" href="{{route('surveyMake')}}"><img src="img/plus-sign.png" class="iconlarge activityicon" alt=" " role="presentation" style="width: 3%;">
 					<span class="instancename">Buat Survey Baru
 						<span class="accesshide ">New Survey</span>
 					</span></a>
