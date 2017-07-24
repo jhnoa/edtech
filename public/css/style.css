@@ -5912,6 +5912,22 @@ dl {
   padding-left: 1%;
 }
 
+.tanggapan-lain{
+  background-color: rgba(120, 138, 255, 0.34);
+  font: 300 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  margin: 0;
+  min-width: 0%;
+  outline: none;
+  padding: .125em 0;
+  z-index: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tanggapan-lain:focus{
+  background-color: #fff;
+  border-color: rgba(120, 138, 255, 0.34);
+}
+
 /* Course
  ================================ */
 
@@ -6110,3 +6126,5 @@ div.jcontrolsleft {
   width: 10%;
   margin-top: 10%;
 }
+
+/**/
