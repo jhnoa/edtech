@@ -22,7 +22,7 @@ $(document).ready(function(){
     function(){ $(this).removeClass('active') }
   )*/
 
-  /*$(document).ready(function(){
+  $(document).ready(function(){
     $('.assignedSubject').click(function() {
         var a = document.getElementsByClassName('assignedSubject');
         for (i = 0; i < a.length; i++) {
@@ -35,10 +35,10 @@ $(document).ready(function(){
         }
         $(this).addClass('active');
         $('.assignedTitle').text($(this).text());
-        var b = <?php echo $assigned[]; ?>;
-        $('.assignedContent').text(b);
+        //var b = <?php echo $assigned[]; ?>;
+        //$('.assignedContent').text(b);
     });
-  }*/
+  });
 
   
 });

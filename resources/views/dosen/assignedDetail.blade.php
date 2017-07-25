@@ -11,9 +11,7 @@
 			<div class="panel-body">
 				
 				@foreach ($assigned as $key => $val)
-					<?php echo '<a href="#" class="list-group-item '; ?> {{ Request::routeIs('adminIndex') ? 'active' : '' }} <?php echo '">'; ?>
-					
-
+					<a href="{{ route('adminAssignDetail',['course' => $val]) }}" class="list-group-item {{ $val === $course ? "active" : "" }}">{{$val}}</a>
 				@endforeach
 				
 			</div>

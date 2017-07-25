@@ -37,10 +37,10 @@ class HomeController extends Controller
             [
                 'title' => 'Assigned Subject',
                 'assigned' => [
-                    'Fisika Dasar',
-                    'Fisika Modern',
-                    'Fisika Energy',
-                    'Fisika Material'
+                    'Fisika-Dasar',
+                    'Fisika-Modern',
+                    'Fisika-Energy',
+                    'Fisika-Material'
             ]
         ]);
     }
@@ -51,12 +51,13 @@ class HomeController extends Controller
             [
                 'title' => 'Assigned Subject',
                 'assigned' => [
-                    'Fisika Dasar',
-                    'Fisika Modern',
-                    'Fisika Energy',
-                    'Fisika Material'
+                    'Fisika-Dasar',
+                    'Fisika-Modern',
+                    'Fisika-Energy',
+                    'Fisika-Material'
                     ],
-                'course' => $course
+                'course' => $course,
+                'content' => 'test content'
             ]
         );
     }

@@ -10,13 +10,9 @@
 			</div>
 			<div class="panel-body">
 				
-				@php
-					foreach ($assigned as $key => $val) {
-						echo '<a href="#" class="list-group-item assignedSubject">'.$val.'</a>';
-					}
-
-					
-				@endphp
+				@foreach ($assigned as $key => $val)
+						<a href="{{ route('adminAssignDetail',['course' => $val]) }}" class="list-group-item">{{$val}}</a>
+				@endforeach
 				
 			</div>
 		</div>
