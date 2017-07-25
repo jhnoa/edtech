@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use DB;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     /**
@@ -64,7 +65,7 @@ class HomeController extends Controller
         );
     }
 
-    public function assignDosenToCourse($value)
+    public function assignDosenToCourse()
     {
         $lecturers = DB::select('select id,name from users where type="2"');
         $courses = DB::select('select * from courses',['year' => date('Y')]);
@@ -83,9 +84,54 @@ class HomeController extends Controller
 
     public function makeCoursePost(Request $request)
     {
+        /*$this->validate($request,[
+        'name'=>'required|unique:seeders|max:255',
+        'address'=>'required`enter code here`',
+        'age'=>'required',
+        ]); */ 
         DB::table('courses')->insert(
-            ['email' => 'john@example.com', 'votes' => 0]
+            [
+                'name' => $request->input('name'),
+                'code' => $request->input('code'),
+                'major' => $request->input('major'),
+                'year' => $request->input('year'), 
+                'semester' => $request->input('semester'),
+                'meet' => $request->input('meet'), 
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
         );
-        return;
+        //\Session::flash('flash_message','successfully saved.');
+ 
+        return view('dosen.makeCourse', ['title' => 'Make Course']);
+    }
+
+    public function makeNew()
+    {
+        //return '<pre>'.var_export(Auth::id()).'</pre>';
+        $id = Auth::id();
+        $name = Auth::user()->name;
+        return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
+    }
+
+    public function makeNewPost(Request $request)
+    {
+        /*$this->validate($request,[
+        'name'=>'required|unique:seeders|max:255',
+        'address'=>'required`enter code here`',
+        'age'=>'required',
+        ]); */ 
+        DB::table('news')->insert(
+            [
+                'userId' => $request->input('userId'),
+                'content' => $request->input('content'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
+        );
+        //\Session::flash('flash_message','successfully saved.');
+        $id = Auth::id();
+        $name = Auth::user()->name;
+        return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
 }

@@ -6,9 +6,12 @@
             <a href="{{ route('adminIndex') }}"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
             <li {{ Request::routeIs('adminAssign') ? 'class=current' : '' }}>
             <a href="{{ route('adminAssign') }}"><i class="glyphicon glyphicon-calendar"></i> Assigned Subject</a></li>
-            <li {{ Request::routeIs('adminAssign') ? 'class=current' : '' }}>
-            <a href="{{ route('adminAssign') }}"><i class="glyphicon glyphicon-stats"></i> Assign Lecturer</a></li>
-            <li><a href="tables.html"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
+            <li {{ Request::routeIs('assignDosenToCourse') ? 'class=current' : '' }}>
+            <a href="{{ route('assignDosenToCourse') }}"><i class="glyphicon glyphicon-stats"></i> Assign Lecturer</a></li>
+            <li {{ Request::routeIs('makeCourse') ? 'class=current' : '' }}>
+            <a href="{{ route('makeCourse') }}"><i class="glyphicon glyphicon-list"></i> Make Course</a></li>
+            <li {{ Request::routeIs('makeNew') ? 'class=current' : '' }}>
+            <a href="{{ route('makeNew') }}"><i class="glyphicon glyphicon-record"></i> Make News </a></li>
             <li><a href="buttons.html"><i class="glyphicon glyphicon-record"></i> Buttons</a></li>
             <li><a href="editors.html"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
             <li><a href="forms.html"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
