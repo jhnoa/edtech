@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CourseStudent extends Migration
+class CreateNewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CourseStudent extends Migration
      */
     public function up()
     {
-        Schema::create('courseStudent', function (Blueprint $table) {
+        Schema::create('news', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('courseId');
-            $table->string('userId');
             $table->timestamps();
-            //$table->foreign('userId')->references('id')->on('users');
-            //$table->foreign('userId')->references('id')->on('courseCode');
         });
     }
 
@@ -30,6 +26,6 @@ class CourseStudent extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courseStudent');
+        Schema::dropIfExists('news');
     }
 }

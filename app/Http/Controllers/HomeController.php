@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -60,5 +62,30 @@ class HomeController extends Controller
                 'content' => 'test content'
             ]
         );
+    }
+
+    public function assignDosenToCourse($value)
+    {
+        $lecturers = DB::select('select id,name from users where type="2"');
+        $courses = DB::select('select * from courses',['year' => date('Y')]);
+        return view('dosen.assignDosenToCourse',
+            [
+                'title' => 'Assign Lecturer',
+                'lecturers'=>$lecturers,
+                'courses' => $courses
+            ]);
+    }
+
+    public function makeCourse()
+    {
+        return view('dosen.makeCourse', ['title' => 'Make Course']);
+    }
+
+    public function makeCoursePost(Request $request)
+    {
+        DB::table('courses')->insert(
+            ['email' => 'john@example.com', 'votes' => 0]
+        );
+        return;
     }
 }

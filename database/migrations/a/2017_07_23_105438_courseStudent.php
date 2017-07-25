@@ -18,8 +18,8 @@ class CourseStudent extends Migration
             $table->string('courseId');
             $table->string('userId');
             $table->timestamps();
-            $table->foreign('userId')->references('id')->on('users');
-            $table->foreign('userId')->references('id')->on('courseCode');
+            //$table->foreign('userId')->references('id')->on('users');
+            //$table->foreign('userId')->references('id')->on('courseCode');
         });
     }
 

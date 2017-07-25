@@ -39,6 +39,10 @@ Route::get('forum/view/create','LandingController@forum4')->name('forumCreate');
 Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');
 Route::get('admin/assign', 'HomeController@dosenAssign')->name('adminAssign');
 Route::get('admin/assign/{course}', 'HomeController@dosenAssignDetail')->name('adminAssignDetail');
+Route::get('admin/lecturer/{id}', 'HomeController@assignDosenToCourse')->name('assignDosenToCourse');
+Route::post('admin/lecturer/{id}/{course}', 'HomeController@assignDosenToCoursePost')->name('assignDosenToCoursePost');
+Route::get('admin/course', 'HomeController@makeCourse')->name('makeCourse');
+Route::post('admin/course', 'HomeController@makeCoursePost')->name('makeCoursePost');
 
 //profile
 Route::get('profile', 'LandingController@profile1')->name('profile');
