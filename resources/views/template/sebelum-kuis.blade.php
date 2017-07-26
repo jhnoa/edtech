@@ -1,4 +1,4 @@
-	<div id="page-content">
+	<div id="page-content-survey">
 	<!-- START NAVBAR -->
 		<div id="headerstrip">
 			<div class="jcontrolsleft">
@@ -19,8 +19,8 @@
 		</div>
 	<!-- END NAVBAR -->
 
-			<div id="region-main-box-course" >
-				<div id="region-post-box" style="border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;min-height: 400px;">
+			<div id="region-main-box" style="overflow: hidden;" >
+				<div id="region-post-box-survey" style="border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;min-height: 400px;">
 					<div class="judul">
                       <a>Judul Pertemuan</a>
 					  <div class="table-judul">

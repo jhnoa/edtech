@@ -43,9 +43,9 @@
                    <div id="region-main">
                      <div class="region-content">
                             <div role="main" style="padding-left: 5%;">
-                            	<span id="maincontent"></span><a href="#skipsitenews" class="skip-block">Skip site news</a>
-                            	<div id="site-news-forum">
-                                <h2 class="headingblock header" style="background-color: #fff;">Site news</h2><a id="p759"></a>
+                            	<span id="maincontent"></span>
+                            	<div id="site-news-forum" style="font-family: -webkit-body;">
+                                <h2 class="headingblock header" style="background-color: #fff; padding-left: 40%;">Site news</h2><a id="p759"></a>
                               
                               @foreach($news as $a => $new)
 
@@ -60,9 +60,6 @@
                                       </div>
                                     </div>
                                     <div class="row maincontent clearfix">
-                                      <div class="left">
-                                        <div class="grouppictures">&nbsp;</div>
-                                      </div>
                                       <div class="no-overflow">
                                         <div class="content">
                                           <div class="posting fullpost">{{ $new->content }}

@@ -65,6 +65,9 @@
                  			<textarea type="text" id="fname" name="firstname" placeholder="Your Answer"></textarea>
                  		</div>                 			
                  	</div>
+                 	   	<button type="submit" class="btn btn-primary" >
+              				<a href="{{route('survey')}}" style="color: #fff;">Submit</a>
+          				</button>
               	 </div>
              </div>
        </div>

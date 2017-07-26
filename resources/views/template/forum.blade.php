@@ -25,12 +25,12 @@
 		<div class="forumbg">
 					<div class="inner">
 					<ul class="topiclist forums" style="padding-left: 0px;">
-							<li class="row">
+							<li class="row" style="padding-left: 1%; font-family: -webkit-body; padding-top: 1%;">
 								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
-																		<div class="list-inner">
-																		<a href="{{ route('forumView') }}" class="forumtitle">{{$course}}</a>
+																		<div class="list-inner" style="padding-top: 1%;">
+																		<a href="{{ route('forumView') }}" class="forumtitle" style="font-family: -webkit-body; font-size: x-large;">{{$course}}</a>
 																		</div>
 										</dt>
 											<dd class="posts"></dd>

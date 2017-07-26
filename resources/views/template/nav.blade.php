@@ -10,9 +10,11 @@
     <li><a href="{{route('profile')}}">Profile</a></li>
 
 @if(Auth::check())
-<li>Welcome back, {{ Auth::user()->name }}</li>
+<li style="padding-left: 20%;">Welcome back, {{ Auth::user()->name }}</li>
 <a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-    Logout
+          <button type="submit" class="btn btn-primary" style="margin-left: 30%;">
+              Logout
+          </button>
 </a>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" >
     {{ csrf_field() }}

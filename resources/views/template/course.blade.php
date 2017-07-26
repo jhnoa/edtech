@@ -46,17 +46,17 @@
 									  <div role="main">
 										 <div id="inst822" class="block_course_overview  block" role="complementary" aria-labelledby="instance-822-header">
 										 	<div class="header">
-										 		<div class="title" id="yui_3_9_1_2_1498706633491_288">
+										 		<div class="title" id="yui_3_9_1_2_1498706633491_288" style="font-family: -webkit-body;padding-left: 38%;">
 										 			<h2 id="instance-822-header">Course overview</h2>
 										 			<div class="commands"></div>
 										 		</div>
 										 	 </div>
-							 	 <div class="content">
+							 	 <div class="content" style="padding-left: 2%;">
 							 	 	
 							 	 @foreach($learnings as $a => $learning)
-							 	 	<div class="course_list">
-							  			<div id="course-365" class="box coursebox">
-							  				<div class="course_title">
+							 	 	<div class="course_list" >
+							  			<div id="course-365" class="box coursebox" >
+							  				<div class="course_title" style="font-family: -webkit-body;">
 							  					<h2 class="title">
 							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">{{$learning->name}} ({{$learning->code}}) - ({{$learning->year}})</a>
 							  					</h2>

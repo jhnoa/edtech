@@ -30,15 +30,15 @@
 								<div class="course-content" >
 									<h2 class="accesshide">Weekly outline</h2>
 									<ul class="weeks">
-										<li id="section-1" class="section main clearfix">
+										<li id="section-1" class="section main clearfix" style="margin-top: 3%; padding-bottom: 2%;padding-left: 2%;">
 											<div class="content">
-												<h3 class="sectionname"><b>Pertemuan 1</b></h3>
+												<h3 class="sectionname"><b style="font-family: -webkit-body;">Pertemuan 1</b></h3>
 												<div class="summary"></div>
 												<ul class="section img-text">
 													<li class="activity resource modtype_resource " id="module-1406">
 														<div class="mod-indent">
 															<div class="activityinstance">
-																<a class="" onclick="" href="http://elearning.surya.ac.id/mod/resource/view.php?id=1406"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/f/jpeg-24" class="iconlarge activityicon" alt=" " role="presentation">
+																<a class="" onclick="" href="{{route('sebelumKuis')}}"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/f/jpeg-24" class="iconlarge activityicon" alt=" " role="presentation">
 																	<span class="instancename">{{$file_upload}}
 																		<span class="accesshide "> File</span>
 																	</span>

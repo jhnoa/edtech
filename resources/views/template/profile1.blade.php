@@ -42,7 +42,7 @@
 						   <div id="region-post-box" style="border-bottom-left-radius: 1em; border-bottom-right-radius: 1em;">
 							  <div id="region-main-wrap">
 								 <div id="region-main-pad">
-								   <div id="region-main" style="padding-left: 2%;">
+								   <div id="region-main" style="padding-left: 2%; font-family: -webkit-body;font-size: larger;">
 									 <div class="region-content">
 									  <div role="main" style="padding-left: 40%;">
 										<h2 class="main"><b style="font-size: 85%; margin-left: -5%;">{{$name}}</b></h2>
@@ -63,7 +63,7 @@
 																	</tr>
 																</tbody>
 															</table>
-															<div class="ygtvchildren" id="ygtvc1">
+															<div class="ygtvchildren" id="ygtvc1" style="padding-top: 8%;">
 																<dl class="list">
 																	<dt>Email</dt>
 																	<dd>{{$email}}</dd>
@@ -74,13 +74,13 @@
 																	<dt>Course profiles</dt>
 																	<dd>
 																		<a >{{$nama_mapel}} ( {{$kode_mapel}})</a>, 
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=385">Kalkulus II (MAT10033) - Kelas A &amp; B (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=365">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=363">Sistem Operasi (HCI10083) - Kelas A (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=361">Pemrograman Lanjut (HCI10064) - Kelas A (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=485">Algoritma dan Struktur Data (HCI10113) - Kelas A (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=483">Matematika Diskrit (HCI10093) - Kelas A (2014)</a>,
-																		<a href="http://elearning.surya.ac.id/user/view.php?id=1442&amp;course=472">Teknik Piranti Lunak (HCI10133) - Kelas A (2014)</a>,
+																		<a href="">Kalkulus II (MAT10033) - Kelas A &amp; B (2014)</a>,
+																		<a href="">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>,
+																		<a href="">Sistem Operasi (HCI10083) - Kelas A (2014)</a>,
+																		<a href="">Pemrograman Lanjut (HCI10064) - Kelas A (2014)</a>,
+																		<a href="">Algoritma dan Struktur Data (HCI10113) - Kelas A (2014)</a>,
+																		<a href="">Matematika Diskrit (HCI10093) - Kelas A (2014)</a>,
+																		<a href="">Teknik Piranti Lunak (HCI10133) - Kelas A (2014)</a>,
 																	</dd>
 																</dl>
 															</div>

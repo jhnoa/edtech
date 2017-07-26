@@ -1354,7 +1354,7 @@ div.jcontrolsleft {
     margin-left: -60%;
     margin-right: 5%;
     border-radius: 10px;
-    height: 7%;
+    min-height: 30px;
   padding-left: 2%;
   padding-top: 2px;
 }
@@ -1363,9 +1363,10 @@ div.jcontrolsleft {
     margin-left: -60%;
     margin-right: 5%;
     border-radius: 10px;
-    height: 60%;
+    min-height: 120px;
     padding-left: 3%;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 .table-deskripsi li{
     display: list-item;
@@ -5863,6 +5864,7 @@ dl {
     padding-bottom: 5%;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    font-family: -webkit-body;
 }
 
 .btn-survey{
@@ -6017,7 +6019,7 @@ div.jcontrolsleft {
     float: left;
     width: 113.7%;
     position: relative;
-    left: 52%;
+    left: 52.5%;
     margin-left: -500px;
     background: #fff;
     height:100%;
@@ -6136,6 +6138,17 @@ div.jcontrolsleft {
     font-size: 16px;
     border: none;
     cursor: pointer;
+}
+
+#selectpicker{
+  font-family: -webkit-body;
+}
+#selectpiker, input{
+  font-size: 15px;
+}
+
+#selectpiker,input,input::-webkit-input-placeholder{
+  color: rgba(27, 28, 28, 0.71);
 }
 
 /* Dropdown button on hover & focus */
