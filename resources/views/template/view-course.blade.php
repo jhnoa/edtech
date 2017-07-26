@@ -38,7 +38,7 @@
 													<li class="activity resource modtype_resource " id="module-1406">
 														<div class="mod-indent">
 															<div class="activityinstance">
-																<a class="" onclick="" href="http://elearning.surya.ac.id/mod/resource/view.php?id=1406"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/f/jpeg-24" class="iconlarge activityicon" alt=" " role="presentation">
+																<a class="" onclick="" href="{{route('sebelumKuis')}}"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/core/1480305559/f/jpeg-24" class="iconlarge activityicon" alt=" " role="presentation">
 																	<span class="instancename">{{$file_upload}}
 																		<span class="accesshide "> File</span>
 																	</span>
