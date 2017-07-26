@@ -154,7 +154,7 @@ class HomeController extends Controller
         $name = Auth::user()->name;
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
-<<<<<<< HEAD
+
     /* forum */
     public function forum1()
     {
@@ -192,7 +192,8 @@ class HomeController extends Controller
           'reply_owner' => 'fajar',
           'reply_time' => '2 jan 2017 13:13',
           'reply_conten' =>'asascas asca sa as f sa'
-=======
+        ]);
+    }
 
     /*learning*/
     public function learning()
@@ -238,12 +239,12 @@ class HomeController extends Controller
         return view('learning-kuis',
         [
           'title' => 'Kuis',
->>>>>>> origin/master
+
 
 
         ]);
     }
-<<<<<<< HEAD
+
     public function forum4()
     {
       DB::table('topicforum')->insert(
@@ -261,8 +262,6 @@ class HomeController extends Controller
 
         ]);
     }
-}
-=======
 
     /*profile*/
     public function profile1()
@@ -279,4 +278,3 @@ class HomeController extends Controller
         ]);
     }
 }
->>>>>>> origin/master
