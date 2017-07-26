@@ -9,7 +9,7 @@
 			<div id="page-content">
 				<!-- START NAVBAR -->
 					<div id="headerstrip">
-						<div class="jcontrolsleft">		
+						<div class="jcontrolsleft">
 							<div class="nav_title">navigation</div>
 							<div class="navbar clearfix">
 								<div class="breadcrumb"> <span class="accesshide">Page path</span>
@@ -27,7 +27,7 @@
 											<span class="accesshide ">
 												<span class="arrow_text">/</span>&nbsp;
 											</span>
-											<span class="arrow sep">&gt;</span>Human Computer Interaction
+											<span class="arrow sep">&gt;</span>{{$prodi}}
 										</li>
 									</ul>
 								</div>
@@ -36,7 +36,7 @@
 						<div id="ebutton"></div>
 					</div>
 				<!-- END NAVBAR -->
-					
+
 					   <div id="region-main-box-course">
 						   <div id="region-post-box">
 							  <div id="region-main-wrap">
@@ -61,7 +61,7 @@
 							  			<div id="course-365" class="box coursebox">
 							  				<div class="course_title">
 							  					<h2 class="title">
-							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>
+							  						<a title="Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)" href="{{ route('viewCourse') }}">{{$nama_mapel}} ({{$kode_mapel}}) - Kelas A ({{$angkatan}})</a>
 							  					</h2>
 							  					<div class="box flush"></div>
 							  				</div>
@@ -74,11 +74,11 @@
 								  									<a href="http://elearning.surya.ac.id/mod/assign/index.php?id=365">
 								  										<img class="iconlarge" alt="Assignment" title="Assignment" src="http://elearning.surya.ac.id/theme/image.php/rocket/mod_assign/1480305559/icon">
 								  									</a>
-							  									</a>You have assignments that need attention 
+							  									</a>You have assignments that need attention
 							  								</div>
 							  								<div id="region_365_assign_inner" class="collapsibleregioninner">
 							  									<div class="assign overview">
-							  										<div class="name">Assignment: 
+							  										<div class="name">Assignment:
 							  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1594">Tugas Membuat Grafik
 							  											</a>
 							  										</div>
@@ -86,7 +86,7 @@
 							  										<div class="details">My submission: Submitted for grading, Not graded</div>
 							  									</div>
 							  									<div class="assign overview">
-							  										<div class="name">Assignment: 
+							  										<div class="name">Assignment:
 							  											<a title="Assignment" href="{{route('sebelumKuis')}}">Quiz Computer Graphic
 							  											</a>
 							  										</div>
@@ -94,7 +94,7 @@
 							  										<div class="details">My submission: Submitted for grading, Not graded</div>
 							  									</div>
 							  									<div class="assign overview">
-							  										<div class="name">Assignment: 
+							  										<div class="name">Assignment:
 							  											<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1851">Kuis Pertemuan ke-10
 							  											</a>
 							  										</div>
@@ -102,7 +102,7 @@
 							  										<div class="details">My submission: Submitted for grading, Not graded</div>
 							  									</div>
 																  <div class="assign overview">
-																	  <div class="name">Assignment: 
+																	  <div class="name">Assignment:
 																	  	<a title="Assignment" href="http://elearning.surya.ac.id/mod/assign/view.php?id=1969">UAS - Tugas Kelompok</a>
 																	  </div>
 																	  <div class="info">Due date: Friday, 10 July 2015, 12:00 PM</div>

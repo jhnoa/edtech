@@ -30,27 +30,13 @@
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
 																		<div class="list-inner">
-																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 1</a>
+																		<a href="{{ route('forumView') }}" class="forumtitle">{{$course}}</a>
 																		</div>
 										</dt>
 											<dd class="posts"></dd>
 											<dd class="posts"></dd>
-											<dd class="topics">30<dfn>Total Topics</dfn></dd>
+											<dd class="topics">{{$sum_topic}}<dfn>Total Topics</dfn></dd>
 									</dl>
-							</li>
-
-							<li class="row">
-								<dl class="icon forum_read" style="margin-left: 0px;">
-										<dt title="No unread posts">
-											<span class="ico_forum_read_subforum" ></span>
-																		<div class="list-inner">
-																		<a href="{{ route('forumView') }}" class="forumtitle">Nama Matkul 2</a>
-																		</div>
-										</dt>
-										<dd class="posts"></dd>
-										<dd class="posts"></dd>
-										<dd class="topics">11<dfn>Total Topics</dfn></dd>
-								</dl>
 							</li>
 
 
