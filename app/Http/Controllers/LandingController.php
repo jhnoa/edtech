@@ -88,7 +88,8 @@ class LandingController extends Controller
     /* forum */
     public function forum1()
     {
-
+    //  $result = DB::select('select * from topicforum');
+    //  $sum_topic = mysql_num_rows($result);
         return view('forum1',
         [
           'title' => 'Forum',
@@ -98,15 +99,13 @@ class LandingController extends Controller
     }
     public function forum2()
     {
+      $topics = DB::select('select owner,title,content,sumReply from topicforum ');
         return view('forum2',
         [
           'title' => 'Forum',
           'course' => 'educational technology',
-          'topic_tittle'=> 'visual audio',
-          'topic_short_content' => 'bagaimana cara mempertimbangaknn knknknknknknk',
-          'topic_reply_sum' => '2',
-          'topic_owner' => 'arie',
-          'topic_time' => '2 jan 2017 12:12'
+          'topics'=> $topics
+
         ]);
     }
     public function forum3()

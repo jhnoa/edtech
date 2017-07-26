@@ -38,8 +38,6 @@
 											<dd class="topics">{{$sum_topic}}<dfn>Total Topics</dfn></dd>
 									</dl>
 							</li>
-
-
 						</ul>
 					</div>
 				</div>
