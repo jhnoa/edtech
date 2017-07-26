@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class LandingController extends Controller
 {
     //
     public function index()
     {
-        return view('landing',['title' => 'Home']);
+        $news = DB::select('select userId,content from news order by updated_at limit 3');
+        //return view('landing',['title' => 'Home']);
+        return var_dump($news->userId);
     }
 
     public function learning()
