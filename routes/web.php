@@ -30,10 +30,10 @@ Route::get('survey/view','LandingController@survey2')->name('surveyView');
 Route::get('survey/makeSurvey','LandingController@survey3')->name('surveyMake');
 
 //forum
-Route::get('forum','LandingController@forum1')->name('forum');
-Route::get('forum/view','LandingController@forum2')->name('forumView');
-Route::get('forum/view/detail','LandingController@forum3')->name('forumDetail');
-Route::get('forum/view/create','LandingController@forum4')->name('forumCreate');
+Route::get('forum','HomeController@forum1')->name('forum');
+Route::get('forum/view','HomeController@forum2')->name('forumView');
+Route::get('forum/view/detail','HomeController@forum3')->name('forumDetail');
+Route::get('forum/view/create','HomeController@forum4')->name('forumCreate');
 
 // Learning Dosen
 Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');

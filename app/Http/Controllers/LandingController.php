@@ -85,51 +85,7 @@ class LandingController extends Controller
     {
         return view('survey-makeSurvey',['title' => 'Survey']);
     }
-    /* forum */
-    public function forum1()
-    {
-    //  $result = DB::select('select * from topicforum');
-    //  $sum_topic = mysql_num_rows($result);
-        return view('forum1',
-        [
-          'title' => 'Forum',
-          'course' => 'education technology',
-          'sum_topic' => '1'
-        ]);
-    }
-    public function forum2()
-    {
-      $topics = DB::select('select owner,title,content,sumReply from topicforum ');
-        return view('forum2',
-        [
-          'title' => 'Forum',
-          'course' => 'educational technology',
-          'topics'=> $topics
 
-        ]);
-    }
-    public function forum3()
-    {
-        return view('forum3',
-        [
-          'title' => 'Forum',
-          'course' => 'educational technology',
-          'topic_tittle'=> 'visual audio',
-          'topic_content' => 'bagaimana cara mempertimbangaknn awdawdawdawdawdawdawdawdawdawdawdawd',
-          'topic_owner' => 'arie',
-          'topic_time' => '2 jan 2017 12:12',
-          'topic_reply_sum' => '2',
-          'reply_owner' => 'fajar',
-          'reply_time' => '2 jan 2017 13:13',
-          'reply_conten' =>'asascas asca sa as f sa'
-
-
-        ]);
-    }
-    public function forum4()
-    {
-        return view('forum4',['title' => 'Forum']);
-    }
     /*profile*/
     public function profile1()
     {

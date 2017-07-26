@@ -107,21 +107,21 @@ class HomeController extends Controller
         'name'=>'required|unique:seeders|max:255',
         'address'=>'required`enter code here`',
         'age'=>'required',
-        ]); */ 
+        ]); */
         DB::table('courses')->insert(
             [
                 'name' => $request->input('name'),
                 'code' => $request->input('code'),
                 'major' => $request->input('major'),
-                'year' => $request->input('year'), 
+                'year' => $request->input('year'),
                 'semester' => $request->input('semester'),
-                'meet' => $request->input('meet'), 
+                'meet' => $request->input('meet'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]
         );
         //\Session::flash('flash_message','successfully saved.');
- 
+
         return view('dosen.makeCourse', ['title' => 'Make Course']);
     }
 
@@ -139,7 +139,7 @@ class HomeController extends Controller
         'name'=>'required|unique:seeders|max:255',
         'address'=>'required`enter code here`',
         'age'=>'required',
-        ]); */ 
+        ]); */
         DB::table('news')->insert(
             [
                 'userId' => $request->input('userId'),
@@ -153,5 +153,63 @@ class HomeController extends Controller
         $id = Auth::id();
         $name = Auth::user()->name;
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
+    }
+    /* forum */
+    public function forum1()
+    {
+    //  $result = DB::select('select * from topicforum');
+    //  $sum_topic = mysql_num_rows($result);
+        return view('forum1',
+        [
+          'title' => 'Forum',
+          'course' => 'education technology',
+          'sum_topic' => '1'
+        ]);
+    }
+    public function forum2()
+    {
+      $topics = DB::select('select owner,title,content,sumReply from topicforum ');
+        return view('forum2',
+        [
+          'title' => 'Forum',
+          'course' => 'educational technology',
+          'topics'=> $topics
+
+        ]);
+    }
+    public function forum3()
+    {
+        return view('forum3',
+        [
+          'title' => 'Forum',
+          'course' => 'educational technology',
+          'topic_tittle'=> 'visual audio',
+          'topic_content' => 'bagaimana cara mempertimbangaknn awdawdawdawdawdawdawdawdawdawdawdawd',
+          'topic_owner' => 'arie',
+          'topic_time' => '2 jan 2017 12:12',
+          'topic_reply_sum' => '2',
+          'reply_owner' => 'fajar',
+          'reply_time' => '2 jan 2017 13:13',
+          'reply_conten' =>'asascas asca sa as f sa'
+
+
+        ]);
+    }
+    public function forum4()
+    {
+      DB::table('topicforum')->insert(
+          [
+              'title' => $request->input('title'),
+              'content' => $request->input('content'),
+              'created_at' => date('Y-m-d H:i:s'),
+              'updated_at' => date('Y-m-d H:i:s')
+          ]
+      );
+        return view('forum4',
+        [
+          'title' => 'Forum',
+          'course' => 'educational technology'
+
+        ]);
     }
 }
