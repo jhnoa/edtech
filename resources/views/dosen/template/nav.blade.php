@@ -12,19 +12,19 @@
             <a href="{{ route('makeCourse') }}"><i class="glyphicon glyphicon-list"></i> Make Course</a></li>
             <li {{ Request::routeIs('makeNew') ? 'class=current' : '' }}>
             <a href="{{ route('makeNew') }}"><i class="glyphicon glyphicon-record"></i> Make News </a></li>
-            <li><a href="forms.html"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
+            <!--li><a href="forms.html"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
             <li class="submenu">
                 <a href="#">
                     <i class="glyphicon glyphicon-list"></i> Pages
                     <span class="caret pull-right"></span>
-                </a>
+                </a-->
                 <!-- Sub menu -->
-                <ul>
+                <!--ul>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="signup.html">Signup</a></li>
                 </ul>
             </li>
-            <li><a href="{{ route('registerLecturer') }}"><i class="glyphicon glyphicon-pencil"></i> Register Account</a></li>
+            <li><a href=""><i class="glyphicon glyphicon-pencil"></i> Register Account</a></li-->
         </ul>
      </div>
 </div>

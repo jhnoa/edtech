@@ -38,28 +38,41 @@ class HomeController extends Controller
     {
         $lecturers = Auth::User()->id;
         $courses = DB::select('select id,courseId from lecturers where userId=:id',['id'=>$lecturers]);
+        foreach ($courses as $a => $key) {
+            $x = DB::select('select id,name from courses where id=:id',['id'=>$key->courseId]);
+            $res[] = ['name' => $x[0]->name, 'id' => $x[0]->id];
+        }
+        //return var_export($res);
         return view('dosen.assigned',
             [
                 'title' => 'Assigned Subject',
-                'assigned' => $courses
+                'assigned' => $res
         ]);
+        //
     }
 
     public function dosenAssignDetail($course)
     {
+        $lecturers = Auth::User()->id;
+        $courses = DB::select('select id,courseId from lecturers where userId=:id',['id'=>$lecturers]);
+        foreach ($courses as $a => $key) {
+            $x = DB::select('select id,name from courses where id=:id',['id'=>$key->courseId]);
+            $res[] = ['name' => $x[0]->name, 'id' => $x[0]->id];
+        }
+        $courseName = DB::select('select name from courses where id=:id',['id'=>$course]);
+        $courseName = $courseName[0]->name;
+
+        //return var_export($courseName);
         return view('dosen.assignedDetail',
             [
                 'title' => 'Assigned Subject',
-                'assigned' => [
-                    'Fisika-Dasar',
-                    'Fisika-Modern',
-                    'Fisika-Energy',
-                    'Fisika-Material'
-                    ],
+                'assigned' => $res,
                 'course' => $course,
+                'courseName' => $courseName,
                 'content' => 'test content'
             ]
         );
+        
     }
 
     public function assignDosenToCourse()
@@ -76,7 +89,7 @@ class HomeController extends Controller
 
     public function assignDosenToCoursePost(Request $request)
     {
-        /*DB::table('lecturers')->insert(
+        DB::table('lecturers')->insert(
             [
                 'courseId' => $request->input('name'),
                 'userId' => $request->input('code'),
@@ -84,13 +97,15 @@ class HomeController extends Controller
                 'updated_at' => date('Y-m-d H:i:s')
             ]
         );
+        $lecturers = DB::select('select id,name from users where type="2"');
+        $courses = DB::select('select id,name from courses');
         return view('dosen.assignDosenToCourse',
             [
                 'title' => 'Assign Lecturer',
                 'lecturers'=>$lecturers,
                 'courses' => $courses
-            ]);*/
-        return $request->all();
+            ]);
+        //return $request->all();
     }
 
     public function makeCourse()
@@ -156,16 +171,18 @@ class HomeController extends Controller
     {
         $id = Auth::id();
         $name = Auth::user()->name;
-        return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
+        return view('dosen.makeAssignment', ['title' => 'Make Assignment', 'id' => $id, 'name' => $name ]);
     }
 
     public function makeAssignmentPost(Request $request)
     {
-        DB::table('news')->insert(
+        DB::table('weeklyAssignment')->insert(
             [
-                'userId' => $request->input('userId'),
-                'title' => $request->input('title'),
+                'courseId' => $request->input('id'),
+                'judul' => $request->input('title'),
+                'desctription' => $request->input('desctription'),
                 'content' => $request->input('content'),
+                'week' => $request->input('week'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]
@@ -268,14 +285,25 @@ class HomeController extends Controller
 
     public function forum4(Request $request)
     {
-      DB::table('topicforum')->insert(
-          [
-              'title' => $request->input('title'),
-              'content' => $request->input('content'),
-              'created_at' => date('Y-m-d H:i:s'),
-              'updated_at' => date('Y-m-d H:i:s')
-          ]
-      );
+        return view('forum4',
+        [
+          'title' => 'Forum',
+          'course' => 'Educational Technology'
+
+        ]);
+    }
+
+    public function forum4Post(Request $request)
+    {
+        DB::table('topicforum')->insert(
+            [
+                'owner' => $request->input('owner'),
+                'title' => $request->input('title'),
+                'content' => $request->input('content'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
+        );
         return view('forum4',
         [
           'title' => 'Forum',

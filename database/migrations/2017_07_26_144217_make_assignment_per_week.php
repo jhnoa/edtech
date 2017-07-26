@@ -15,7 +15,10 @@ class MakeAssignmentPerWeek extends Migration
     {
         Schema::create('weeklyAssignment', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('courseId');
             $table->string('judul');
+            $table->string('desctription');
+            $table->string('content');
             $table->integer('week');
             $table->timestamps();
         });

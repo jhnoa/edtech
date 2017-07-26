@@ -14,7 +14,7 @@
 				<div class="panel-title">Make Assignment</div>
 			</div>
 			<div class="panel-body">
-				<form action = "{{ route('makeNewPost') }}" method = "post">
+				<form action = "{{ route('makeAssignmentPost') }}" method = "post">
 				{{ csrf_field() }}
 					<input type="hidden" name="userId" value="{{ $id }}">
 				  <div class="form-group col-md-6">

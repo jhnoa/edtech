@@ -34,6 +34,7 @@ Route::get('forum','HomeController@forum1')->name('forum');
 Route::get('forum/view','HomeController@forum2')->name('forumView');
 Route::get('forum/view/detail','HomeController@forum3')->name('forumDetail');
 Route::get('forum/view/create','HomeController@forum4')->name('forumCreate');
+Route::post('forum/view/create','HomeController@forum4Post')->name('forumCreatePost');
 
 // Learning Dosen
 Route::get('admin/learning', 'HomeController@dosen')->name('adminIndex');
