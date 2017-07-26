@@ -1354,7 +1354,7 @@ div.jcontrolsleft {
     margin-left: -60%;
     margin-right: 5%;
     border-radius: 10px;
-    height: 7%;
+    min-height: 30px;
   padding-left: 2%;
   padding-top: 2px;
 }
@@ -1363,9 +1363,10 @@ div.jcontrolsleft {
     margin-left: -60%;
     margin-right: 5%;
     border-radius: 10px;
-    height: 60%;
+    min-height: 120px;
     padding-left: 3%;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 .table-deskripsi li{
     display: list-item;
