@@ -68,7 +68,7 @@ class HomeController extends Controller
     public function assignDosenToCourse()
     {
         $lecturers = DB::select('select id,name from users where type="2"');
-        $courses = DB::select('select * from courses',['year' => date('Y')]);
+        $courses = DB::select('select id,name from courses');
         return view('dosen.assignDosenToCourse',
             [
                 'title' => 'Assign Lecturer',
@@ -79,14 +79,10 @@ class HomeController extends Controller
 
     public function assignDosenToCoursePost(Request $request)
     {
-        DB::table('courses')->insert(
+        /*DB::table('lecturers')->insert(
             [
-                'name' => $request->input('name'),
-                'code' => $request->input('code'),
-                'major' => $request->input('major'),
-                'year' => $request->input('year'), 
-                'semester' => $request->input('semester'),
-                'meet' => $request->input('meet'), 
+                'courseId' => $request->input('name'),
+                'userId' => $request->input('code'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]
@@ -96,7 +92,8 @@ class HomeController extends Controller
                 'title' => 'Assign Lecturer',
                 'lecturers'=>$lecturers,
                 'courses' => $courses
-            ]);
+            ]);*/
+        return $request->all();
     }
 
     public function makeCourse()

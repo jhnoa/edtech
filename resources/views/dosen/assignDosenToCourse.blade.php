@@ -13,16 +13,16 @@
 					<form action="{{ route('assignDosenToCoursePost') }}" id="contentForm" method="post">
 					{{ csrf_field() }}
 						<div class="form-group col-md-4">
-							<label for="name">Lecturer Name:</label>
-							<select class="selectpicker">
+							<label for="code">Lecturer Name:</label>
+							<select class="selectpicker" name="code">
 							@foreach($lecturers as $lecturer)
-								<option class="form-control" name="name" value="{{$lecturer->id}}">{{$lecturer->name}}</option>
+								<option class="form-control" name="code" value="{{$lecturer->id}}">{{$lecturer->name}}</option>
 							@endforeach
 							</select>	
 						</div>
 						<div class="form-group col-md-4">
 							<label for="name">Course Name:</label>
-							<select class="selectpicker">
+							<select class="selectpicker" name="name">
 							@foreach($courses as $course)
 								<option class="form-control" name="name" value="{{$course->id}}">{{$course->name}}</option>
 							@endforeach
