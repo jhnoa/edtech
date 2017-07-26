@@ -2,7 +2,7 @@
     ============================================= -->
 	<div id="page-content-survey">
 	<!-- START CUSTOM SEARCH REGION  -->
-	
+
 	<!-- END CUSTOM SEARCH REGION -->
 		<!-- <div id="sitename">Surya University</div> -->
 		<div id="headerstrip" style="margin-left: -0.6%;height: 35px;">
@@ -11,14 +11,14 @@
        <div id="region-post-box-survey">
 
                <div id="region-main">
-                 <div class="region-content" style="margin-top: 2%;padding-left: 2%;"> 
+                 <div class="region-content" style="margin-top: 2%;padding-left: 2%;">
 					<a class="" onclick="" href="{{route('surveyMake')}}"><img src="img/plus-sign.png" class="iconlarge activityicon" alt=" " role="presentation" style="width: 3%;">
 					<span class="instancename">Buat Survey Baru
 						<span class="accesshide ">New Survey</span>
 					</span></a>
 					<div class="clearfix">
             			<a href="{{route('surveyView')}}">
-            				<input class="btn-survey span12 btn-realto-form btn-large" value="Contoh Survey 1" type="submit">
+            				<input class="btn-survey span12 btn-realto-form btn-large" value="{{$survey_title}}" type="submit">
             			</a>
 
         			</div>
@@ -45,4 +45,3 @@
 
 	});
 </script>
-    

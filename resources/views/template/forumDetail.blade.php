@@ -21,14 +21,14 @@
         									<span class="arrow_text">/</span>&nbsp;
         								</span>
         									<span class="arrow sep">&gt;</span>
-        									<a href="{{ route('forumView') }}" >Nama Matakul n</a>
+        									<a href="{{ route('forumView') }}" >{{$course}}</a>
         							</li>
                       <li>
         								<span class="accesshide ">
         									<span class="arrow_text">/</span>&nbsp;
         								</span>
         									<span class="arrow sep">&gt;</span>
-        									<a href="{{ route('forumDetail') }}" >Topic 1</a>
+        									<a href="{{ route('forumDetail') }}" >{{$topic_tittle}}</a>
         							</li>
 						</ul>
 					</div>
@@ -43,16 +43,15 @@
 						<div class="avatar-container">
 								<a href="#" class="avatar"><img class="avatar" src="#" width="80" height="80" alt="User avatar"></a>
             </div>
-						     <a href="#" style="color: #AA0000;" class="username-coloured">nama dosen</a>
+						     <a href="#" style="color: #AA0000;" class="username-coloured">{{$topic_owner}}</a>
 					</dt>
-					<dd class="profile-rank">prodi</dd>
 				</dl>
 
 				<div class="postbody">
 						<div id="post_content60">
-    					<h3 class="first"><a href="#">Topic 1</a></h3>
-    					<p class="author"><a href="#">01 Oct 2015, 17:39</a> </p>
-					<div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    					<h3 class="first"><a href="#">{{$topic_tittle}}</a></h3>
+    					<p class="author"><a href="#">{{$topic_time}}</a> </p>
+					<div class="content">{{$topic_content}}</div>
 
 						</div>
 				</div>
@@ -66,16 +65,14 @@
 					<div class="avatar-container">
 						<a href="#" class="avatar"><img class="avatar" src="#" width="80" height="80" alt="User avatar"></a>
 					</div>
-							<a href="#" class="username">Nama pelajar</a>
+							<a href="#" class="username">{{$reply_owner}}</a>
 				</dt>
 				</dl>
 					<div class="postbody">
 							<div id="post_content70">
-									<h3><a href="#p70">Re: Contoh post/comment</a></h3>
 
-										<p class="author"><a href="#">07 Dec 2015, 20:20</a> </p>
-											<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-											</div>
+										<p class="author"><a href="#">{{$reply_time}}</a> </p>
+											<div class="content">{{$reply_conten}}</div>
 							</div>
 					</div>
 			</div>

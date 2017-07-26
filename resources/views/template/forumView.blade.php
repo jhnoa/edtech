@@ -21,7 +21,7 @@
 									<span class="arrow_text">/</span>&nbsp;
 								</span>
 									<span class="arrow sep">&gt;</span>
-									<a href="{{ route('forumView') }}" >Nama Matakul n</a>
+									<a href="{{ route('forumView') }}" >{{$course}}</a>
 							</li>
 						</ul>
 					</div>
@@ -34,46 +34,30 @@
 					<div class="inner">
 			<ul class="topiclist forums" style="padding-left: 0px;" >
 							<li class="row">
+
+								@foreach ($topics as $a => $topic)
 								<dl class="icon forum_read" style="margin-left: 0px;">
 										<dt title="No unread posts">
 											<span class="ico_forum_read"></span>
 																	<div class="list-inner">
-																		<a href="{{ route('forumDetail') }}" class="forumtitle">Judul Topic 1</a>
-																			<br>pejelasan singkat vsoevnskevsensk
+																		<a href="{{ route('forumDetail') }}" class="forumtitle">{{$topic->title}}</a>
+																			<br>{{$topic->content}}
 																	</div>
 										</dt>
 											<dd class="topics"><dfn></dfn></dd>
-											<dd class="posts">2<dfn>Replies</dfn></dd>
+											<dd class="posts">{{$topic->sumReply}}<dfn>Replies</dfn></dd>
 											<dd class="lastpost">
-												<dfn>Last post</dfn><a href="#" title="Re: Good topic" class="lastsubject">Re: Good topic</a> <br>
-												by <a href="#" class="username">Kamziu</a>
-												07 Dec 2015, 21:06
+												by <a href="#" class="username">{{$topic->owner}}</a>
+												
 											</dd>
 									</dl>
+									@endforeach
+
 							</li>
-
-							<li class="row">
-								<dl class="icon forum_read" style="margin-left: 0px;">
-										<dt title="No unread posts">
-											<span class="ico_forum_read"></span>
-																	<div class="list-inner">
-																		<a href="#" class="forumtitle">Judul Topic 2</a>
-																			<br>pejelasan singkat vsoevnskevsensk
-																	</div>
-										</dt>
-											<dd class="topics"><dfn></dfn></dd>
-											<dd class="posts">2<dfn>Replies</dfn></dd>
-											<dd class="lastpost">
-												<dfn>Last post</dfn><a href="#" title="Re: Good topic" class="lastsubject">Re: Good topic</a> <br>
-												by <a href="#" class="username">Kamziu</a>
-												07 Dec 2015, 21:06
-											</dd>
-									</dl>
-							</li
-
 						</ul>
 				</div>
 	</div>
+
 
 						<a href="{{ route('forumCreate') }}" class="button font-icon" title="Post a new topic">
 						<i class="fa fa-pencil"></i>New Topic					</a>
