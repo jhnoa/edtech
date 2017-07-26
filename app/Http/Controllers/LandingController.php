@@ -10,9 +10,9 @@ class LandingController extends Controller
     //
     public function index()
     {
-        $news = DB::select('select userId,content from news order by updated_at limit 3');
-        //return view('landing',['title' => 'Home']);
-        return var_dump($news->userId);
+        $news = DB::select('select userId,title,content,updated_at from news order by updated_at limit 3');
+        return view('landing',['title' => 'Home', 'news' => $news]);
+        //return var_dump($news->userId);
     }
 
     public function learning()

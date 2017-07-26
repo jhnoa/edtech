@@ -124,6 +124,7 @@ class HomeController extends Controller
         DB::table('news')->insert(
             [
                 'userId' => $request->input('userId'),
+                'title' => $request->input('title'),
                 'content' => $request->input('content'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
