@@ -77,6 +77,28 @@ class HomeController extends Controller
             ]);
     }
 
+    public function assignDosenToCoursePost(Request $request)
+    {
+        DB::table('courses')->insert(
+            [
+                'name' => $request->input('name'),
+                'code' => $request->input('code'),
+                'major' => $request->input('major'),
+                'year' => $request->input('year'), 
+                'semester' => $request->input('semester'),
+                'meet' => $request->input('meet'), 
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
+        );
+        return view('dosen.assignDosenToCourse',
+            [
+                'title' => 'Assign Lecturer',
+                'lecturers'=>$lecturers,
+                'courses' => $courses
+            ]);
+    }
+
     public function makeCourse()
     {
         return view('dosen.makeCourse', ['title' => 'Make Course']);

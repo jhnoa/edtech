@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/bootstrap-select.min.css') }}" rel="stylesheet">
     <!-- styles -->
     <link href="{{ URL::asset('css/stylesDosen.css') }}" rel="stylesheet">
     <!-- custom Js -->

@@ -13,3 +13,4 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="{{ URL::asset('js/customDosen.js') }}"></script>
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('js/bootstrap-select.min.js') }}"></script>
