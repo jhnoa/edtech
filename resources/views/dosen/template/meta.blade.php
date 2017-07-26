@@ -6,6 +6,7 @@
     <link href="{{ URL::asset('css/bootstrap-select.min.css') }}" rel="stylesheet">
     <!-- styles -->
     <link href="{{ URL::asset('css/stylesDosen.css') }}" rel="stylesheet">
+    <script src="{{ URL::asset('js/template-pertanyaan.js') }}"></script>
     <!-- custom Js -->
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

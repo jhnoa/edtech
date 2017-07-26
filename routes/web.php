@@ -45,6 +45,8 @@ Route::get('admin/course', 'HomeController@makeCourse')->name('makeCourse');
 Route::post('admin/course', 'HomeController@makeCoursePost')->name('makeCoursePost');
 Route::get('admin/news', 'HomeController@makeNew')->name('makeNew');
 Route::post('admin/news', 'HomeController@makeNewPost')->name('makeNewPost');
+Route::get('admin/assignment', 'HomeController@makeAssignment')->name('makeAssignment');
+Route::post('admin/assignment', 'HomeController@makeAssignmentPost')->name('makeAssignmentPost');
 
 //profile
 Route::get('profile', 'HomeController@profile1')->name('profile');

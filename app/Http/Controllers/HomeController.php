@@ -36,15 +36,12 @@ class HomeController extends Controller
     }
     public function dosenAssign()
     {
+        $lecturers = Auth::User()->id;
+        $courses = DB::select('select id,courseId from lecturers where userId=:id',['id'=>$lecturers]);
         return view('dosen.assigned',
             [
                 'title' => 'Assigned Subject',
-                'assigned' => [
-                    'Fisika-Dasar',
-                    'Fisika-Modern',
-                    'Fisika-Energy',
-                    'Fisika-Material'
-            ]
+                'assigned' => $courses
         ]);
     }
 
@@ -155,13 +152,15 @@ class HomeController extends Controller
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
 
+    public function makeAssignment()
+    {
+        $id = Auth::id();
+        $name = Auth::user()->name;
+        return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
+    }
+
     public function makeAssignmentPost(Request $request)
     {
-        /*$this->validate($request,[
-        'name'=>'required|unique:seeders|max:255',
-        'address'=>'required`enter code here`',
-        'age'=>'required',
-        ]); */
         DB::table('news')->insert(
             [
                 'userId' => $request->input('userId'),
