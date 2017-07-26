@@ -59,17 +59,18 @@ class HomeController extends Controller
             $x = DB::select('select id,name from courses where id=:id',['id'=>$key->courseId]);
             $res[] = ['name' => $x[0]->name, 'id' => $x[0]->id];
         }
-        $courseName = DB::select('select name from courses where id=:id',['id'=>$course]);
-        $courseName = $courseName[0]->name;
-
-        //return var_export($courseName);
+        $courseDetail = DB::select('select * from courses where id=:id',['id'=>$course]);
+        $courseName = $courseDetail[0]->name;
+        $content['Code']  = $courseDetail[0]->code;
+        $content['Meeting']  = $courseDetail[0]->meet;
+        //return var_export($content);
         return view('dosen.assignedDetail',
             [
                 'title' => 'Assigned Subject',
                 'assigned' => $res,
                 'course' => $course,
                 'courseName' => $courseName,
-                'content' => 'test content'
+                'content' => $content
             ]
         );
         

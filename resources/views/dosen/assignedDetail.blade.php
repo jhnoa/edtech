@@ -25,7 +25,9 @@
 					<div class="panel-title assignedTitle">Detail - {{$courseName}}</div>
   				</div>
   				<div class="content-box-large box-with-header assignedContent">
-  					{{ $content }}
+  					@foreach ($content as $key => $val)
+  					{{$key}}: {{ $val }} <br />
+  					@endforeach
 					<br /><br />
 				</div>
 			</div>
