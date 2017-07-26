@@ -47,7 +47,7 @@ Route::get('admin/news', 'HomeController@makeNew')->name('makeNew');
 Route::post('admin/news', 'HomeController@makeNewPost')->name('makeNewPost');
 
 //profile
-Route::get('profile', 'LandingController@profile1')->name('profile');
+Route::get('profile', 'HomeController@profile1')->name('profile');
 
 //Route::get('home', 'LandingController@index');
 //Route::get('logout', 'HomeController@index');
