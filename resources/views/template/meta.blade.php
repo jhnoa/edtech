@@ -6,5 +6,6 @@
 	<script src="{{ URL::asset('js/jquery.transit.min.js') }}"></script>
 	<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 	<script src="{{ URL::asset('js/custom.js') }}"></script>
+	<script src="{{ URL::asset('js/template-pertanyaan.js') }}"></script>
 
 	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"

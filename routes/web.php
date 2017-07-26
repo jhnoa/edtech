@@ -18,11 +18,11 @@ Auth::routes();
 
 
 // Learning Mahasiswa
-Route::get('learning','LandingController@learning')->name('myCourse');
-Route::get('learning/view','LandingController@course')->name('viewCourse');
-Route::get('learning/view/folder','LandingController@makeFolder')->name('makeFolder');
-Route::get('learning/view/start-kuis','LandingController@sebelumKuis')->name('sebelumKuis');
-Route::get('learning/view/kuis','LandingController@kuis')->name('kuis');
+Route::get('learning','HomeController@learning')->name('myCourse');
+Route::get('learning/view','HomeController@course')->name('viewCourse');
+Route::get('learning/view/folder','HomeController@makeFolder')->name('makeFolder');
+Route::get('learning/view/start-kuis','HomeController@sebelumKuis')->name('sebelumKuis');
+Route::get('learning/view/kuis','HomeController@kuis')->name('kuis');
 
 //Survey
 Route::get('survey','LandingController@survey')->name('survey');
