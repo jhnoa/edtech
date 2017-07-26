@@ -5353,18 +5353,19 @@ input {
   border-radius: 3px;
 }
 select {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  cursor: pointer;
-  vertical-align: middle;
-  border: 1px solid transparent;
-  padding: 0 20px;
-  font-size: 1em;
-  height: 33px;
-  -webkit-transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
-          transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
-  border-radius: 3px;
-  -webkit-appearance: none;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 27, 27, 0);
+    padding: 0 20px;
+    font-size: 1em;
+    height: 33px;
+    -webkit-transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    background-color: rgba(120, 138, 255, 0.4);
 }
 select:focus {
   outline-style: none;
@@ -6127,4 +6128,14 @@ div.jcontrolsleft {
   margin-top: 10%;
 }
 
-/**/
+/*dropdown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */

@@ -12,11 +12,18 @@
 
                <div id="region-main">
                  <div class="region-content" style="margin-top: 2%;padding-left: 2%;"> 
-                 	<div class="soal-pilihan-ganda" style="margin-bottom: 2%;">
+					<a style="color: #000;"><b>Pilih bentuk survey</b></a>
+					<select class="selectpicker">
+					  <option style="background-color: #fff;">pilihan ganda</option>
+					  <option style="background-color: #fff;">checkbox</option>
+					  <option style="background-color: #fff;">Likert</option>
+					  <option style="background-color: #fff;">Pendapat</option>
+					</select>
+
+					</div>
+                 	<!--<div class="soal-pilihan-ganda" style="margin-bottom: 2%;">
                  		<a style="color: #000;">1. Pertanyaan A.Likert</a>
                  		<form role="form" name="quizform" action="quiztest.asp?qtest=HTML" method="post" style="padding-left: 2%;">
-							    <input type="hidden" name="starttime" value="7/20/2017 7:51:44 AM">
-							    <input type="hidden" name="answers" value="0000000000000000000000000000000000000000" size="25">
 							    <input type="hidden" name="qnumber" value="1" size="25">
 							    <div class="col-md-8" style="width: 103%; margin-left: -3%;">
 								    <div class="col-md-3" style="margin-top: 9px;">Soal Likert</div>
@@ -65,12 +72,13 @@
                  			<textarea type="text" id="fname" name="firstname" placeholder="Your Answer"></textarea>
                  		</div>                 			
                  	</div>
+                 	-->
               	 </div>
              </div>
        </div>
     </div>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(function () {
 	    "use strict";
 	    var resizeDiv = function (object) {
@@ -87,5 +95,28 @@
 	    });
 
 	});
+
+
+</script>-->
+
+<script>
+	function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
     
