@@ -185,7 +185,7 @@ class HomeController extends Controller
         return view('forum1',
         [
           'title' => 'Forum',
-          'course' => 'education technology',
+          'course' => 'Education Technology',
           'sum_topic' => '1'
         ]);
     }
@@ -195,7 +195,7 @@ class HomeController extends Controller
         return view('forum2',
         [
           'title' => 'Forum',
-          'course' => 'educational technology',
+          'course' => 'Educational Technology',
           'topics'=> $topics
 
         ]);
@@ -205,9 +205,9 @@ class HomeController extends Controller
         return view('forum3',
         [
           'title' => 'Forum',
-          'course' => 'educational technology',
+          'course' => 'Educational Technology',
           'topic_tittle'=> 'visual audio',
-          'topic_content' => 'bagaimana cara mempertimbangaknn awdawdawdawdawdawdawdawdawdawdawdawd',
+          'topic_content' => 'Membuat video visual yang memudahkan seseorang mengedukasi',
           'topic_owner' => 'arie',
           'topic_time' => '2 jan 2017 12:12',
           'topic_reply_sum' => '2',
@@ -280,7 +280,7 @@ class HomeController extends Controller
         return view('forum4',
         [
           'title' => 'Forum',
-          'course' => 'educational technology'
+          'course' => 'Educational Technology'
 
         ]);
     }

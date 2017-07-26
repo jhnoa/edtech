@@ -32,7 +32,7 @@
 									<ul class="weeks">
 										<li id="section-1" class="section main clearfix">
 											<div class="content">
-												<h3 class="sectionname"><b>Pertemuan 1</b></h3>
+												<h3 class="sectionname"><b style="font-family: -webkit-body;">Pertemuan 1</b></h3>
 												<div class="summary"></div>
 												<ul class="section img-text">
 													<li class="activity resource modtype_resource " id="module-1406">
