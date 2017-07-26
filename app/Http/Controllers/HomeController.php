@@ -154,6 +154,7 @@ class HomeController extends Controller
         $name = Auth::user()->name;
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
+<<<<<<< HEAD
     /* forum */
     public function forum1()
     {
@@ -191,10 +192,58 @@ class HomeController extends Controller
           'reply_owner' => 'fajar',
           'reply_time' => '2 jan 2017 13:13',
           'reply_conten' =>'asascas asca sa as f sa'
+=======
+
+    /*learning*/
+    public function learning()
+    {
+        $learnings = DB::select('select name,code,major,year from courses');
+        return view('learning',
+        [
+          'title' => 'Learning',
+          'prodi' => 'Human Computer Interaction2014',
+          'learnings' => $learnings
+        ]);
+    }
+
+    public function course()
+    {
+        return view('learning-course',
+      [
+        'title' => 'View Course',
+        'id_pertemuan'=>'1',
+        'file_upload' => 'Materi pertemuan 1',
+        'prodi' => 'Human Computer Interaction2014',
+      ]);
+    }
+
+    public function makeFolder()
+    {
+        return view('learning-course-folder',['title' => 'Learning']);
+    }
+
+    public function sebelumKuis()
+    {
+        return view('learning-sebelum-kuis',
+        [
+          'title' => 'Kuis',
+          'title_pertemuan' => 'Kuis Kalkulus',
+          'deskripsi_text' => 'waktu : 60 menit',
+          'prodi' => 'Human Computer Interaction2014'
+        ]);
+    }
+
+    public function kuis()
+    {
+        return view('learning-kuis',
+        [
+          'title' => 'Kuis',
+>>>>>>> origin/master
 
 
         ]);
     }
+<<<<<<< HEAD
     public function forum4()
     {
       DB::table('topicforum')->insert(
@@ -213,3 +262,21 @@ class HomeController extends Controller
         ]);
     }
 }
+=======
+
+    /*profile*/
+    public function profile1()
+    {
+        return view('profile',
+        [
+          'title' => 'Profile',
+          'name' => 'Handy Tantyo',
+          'email' => 'handy.tantyo14@student.surya.ac.id',
+          'prodi' => 'Human Computer Interaction',
+          'jabatan'=> 'Mahasiswa',
+          'nama_mapel' => 'Dasar-Dasar Animasi',
+          'kode_mapel' => 'HCI000001'
+        ]);
+    }
+}
+>>>>>>> origin/master

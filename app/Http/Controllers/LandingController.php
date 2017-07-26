@@ -17,13 +17,12 @@ class LandingController extends Controller
 
     public function learning()
     {
+        $learnings = DB::select('select name,code,major,year from courses');
         return view('learning',
         [
           'title' => 'Learning',
           'prodi' => 'Human Computer Interaction2014',
-          'nama_mapel' => 'Dasar-Dasar Animasi',
-          'kode_mapel' => 'HCI000001',
-          'angkatan' => '2014'
+          'learnings' => $learnings
         ]);
     }
 
