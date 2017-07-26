@@ -5864,6 +5864,7 @@ dl {
     padding-bottom: 5%;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    font-family: -webkit-body;
 }
 
 .btn-survey{
@@ -6137,6 +6138,17 @@ div.jcontrolsleft {
     font-size: 16px;
     border: none;
     cursor: pointer;
+}
+
+#selectpicker{
+  font-family: -webkit-body;
+}
+#selectpiker, input{
+  font-size: 15px;
+}
+
+#selectpiker,input,input::-webkit-input-placeholder{
+  color: rgba(27, 28, 28, 0.71);
 }
 
 /* Dropdown button on hover & focus */

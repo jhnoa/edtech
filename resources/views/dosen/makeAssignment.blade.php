@@ -19,10 +19,10 @@
 						<p id="demo" style="padding-left: 2%; padding-bottom: 2%;"></p>
 					</form>
 
-					<a style="color: #000;"><b>Pilih bentuk survey</b></a>
+					<a style="color: #000;"><b>Pilih bentuk survey: </b></a>
 					<select id="selectpicker">
-					  <option value="pilihan-ganda" style="background-color: #fff;" onclick="buka()">pilihan ganda</option>
-					  <option value="checkbox" style="background-color: #fff;" onclick="buka()">checkbox</option>
+					  <option value="pilihan-ganda" style="background-color: #fff;" onclick="buka()">Radio Button</option>
+					  <option value="checkbox" style="background-color: #fff;" onclick="buka()">Checkbox</option>
 					  <option value="pendapat" style="background-color: #fff;" onclick="buka()">Pendapat</option>
 					</select>
 					<button type="button" class="btn btn-primary" onclick="buka()">pilih</button>
