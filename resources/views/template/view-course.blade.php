@@ -30,7 +30,7 @@
 								<div class="course-content" >
 									<h2 class="accesshide">Weekly outline</h2>
 									<ul class="weeks">
-										<li id="section-1" class="section main clearfix">
+										<li id="section-1" class="section main clearfix" style="margin-top: 3%; padding-bottom: 2%;padding-left: 2%;">
 											<div class="content">
 												<h3 class="sectionname"><b style="font-family: -webkit-body;">Pertemuan 1</b></h3>
 												<div class="summary"></div>

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-10">
       <a href="{{route('index')}}" class="s-brand">
-        <img class="s-logo animated flipInY delay7" src="img/logo-surya.png" alt="Senayan" style="width: 8%;">
+        <img class="s-logo animated flipInY delay7" src="img/logo-surya.png" alt="Surya" style="width: 8%;">
         <h1 class="animated fadeInUp delay2" style="padding-top: 1%;">Surya University</h1>
         <div class="s-brand-tagline animated fadeInUp delay3">Research Based University</div>
       </a>
