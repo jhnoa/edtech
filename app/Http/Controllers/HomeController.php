@@ -155,6 +155,28 @@ class HomeController extends Controller
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
 
+    public function makeAssignmentPost(Request $request)
+    {
+        /*$this->validate($request,[
+        'name'=>'required|unique:seeders|max:255',
+        'address'=>'required`enter code here`',
+        'age'=>'required',
+        ]); */
+        DB::table('news')->insert(
+            [
+                'userId' => $request->input('userId'),
+                'title' => $request->input('title'),
+                'content' => $request->input('content'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
+        );
+        //\Session::flash('flash_message','successfully saved.');
+        $id = Auth::id();
+        $name = Auth::user()->name;
+        return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
+    }
+
     /* forum */
     public function forum1()
     {
@@ -245,7 +267,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function forum4()
+    public function forum4(Request $request)
     {
       DB::table('topicforum')->insert(
           [
