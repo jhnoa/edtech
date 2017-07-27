@@ -55,7 +55,7 @@
                                       
                                       <div class="topic firstpost starter">
                                         <div class="subject">{{ $new->title }}</div>
-                                      <div class="author">by {{ $new->userId }} - {{ $new->updated_at }}
+                                      <div class="author">by {{ $new->name }} - {{ $new->updated_at }}
                                       </div>
                                       </div>
                                     </div>

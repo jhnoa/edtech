@@ -302,6 +302,7 @@ class ComposerStaticInit026062611a608ac62437cc205d6fd8b9
         'CourseCode' => __DIR__ . '/../..' . '/database/migrations/a/2017_07_23_105418_courseCode.php',
         'CourseLecturer' => __DIR__ . '/../..' . '/database/migrations/a/2017_07_23_105428_courseLecturer.php',
         'CourseStudent' => __DIR__ . '/../..' . '/database/migrations/a/2017_07_23_105438_courseStudent.php',
+        'CourseVideo' => __DIR__ . '/../..' . '/database/migrations/2017_07_27_022358_courseVideo.php',
         'CoursesTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_25_071738_courses_table.php',
         'CreateKuisTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_26_110759_create_kuis_table.php',
         'CreateNewsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_25_075700_create_news_table.php',

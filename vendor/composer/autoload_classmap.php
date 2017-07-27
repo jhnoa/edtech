@@ -36,6 +36,7 @@ return array(
     'CourseCode' => $baseDir . '/database/migrations/a/2017_07_23_105418_courseCode.php',
     'CourseLecturer' => $baseDir . '/database/migrations/a/2017_07_23_105428_courseLecturer.php',
     'CourseStudent' => $baseDir . '/database/migrations/a/2017_07_23_105438_courseStudent.php',
+    'CourseVideo' => $baseDir . '/database/migrations/2017_07_27_022358_courseVideo.php',
     'CoursesTable' => $baseDir . '/database/migrations/2017_07_25_071738_courses_table.php',
     'CreateKuisTable' => $baseDir . '/database/migrations/2017_07_26_110759_create_kuis_table.php',
     'CreateNewsTable' => $baseDir . '/database/migrations/2017_07_25_075700_create_news_table.php',

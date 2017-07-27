@@ -49,11 +49,7 @@
 													<li class="activity folder modtype_folder " id="module-1475">
 														<div class="mod-indent">
 															<div class="activityinstance">
-																<a class="" onclick="" href="{{route('makeFolder')}}"><img src="http://elearning.surya.ac.id/theme/image.php/rocket/folder/1480305559/icon" class="iconlarge activityicon" alt=" " role="presentation">
-																			<span class="instancename">Lecture Notes
-																				<span class="accesshide "> Folder</span>
-																			</span>
-																</a>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/l_4cyiIE0ZY?list=PLe30vg_FG4OQz1yZq0z19ZuWD_C3MZbA4" frameborder="0" allowfullscreen></iframe>
 															</div>
 														</div>
 													</li>

@@ -4,7 +4,7 @@
 	            <div class="col-md-10">
 	                <!-- Logo -->
 	                <div class="logo">
-	                    <h1><a href="index.html">Learning Center</a></h1>
+	                    <h1><a href="{{route('index')}}">Learning Center</a></h1>
 	                </div>
 	            </div>
 	            <div class="col-md-2">

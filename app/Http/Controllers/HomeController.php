@@ -213,9 +213,9 @@ class HomeController extends Controller
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
 
-    public function embedYoutube(Request $request)
+    public function embedYoutube($string)
     {
-        
+        $result = preg_replace("/\s*[a-zA-Z\/\/:\.]*youtube.com\/watch\?v=([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i","<iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/$1\" frameborder=\"0\" allowfullscreen></iframe>",$string);
     }
 
     /* forum */
@@ -272,6 +272,9 @@ class HomeController extends Controller
 
     public function course()
     {
+        $idUser = Auth::user()->id;
+        
+        $video = DB::select('select title,videoUrl,videoEmbed from courseVideos where courseId=:id', ['id'=>$id]);
         return view('learning-course',
       [
         'title' => 'View Course',
