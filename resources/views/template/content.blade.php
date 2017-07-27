@@ -42,10 +42,10 @@
                  <div id="region-main-pad">
                    <div id="region-main">
                      <div class="region-content">
-                            <div role="main" style="padding-left: 5%;">
+                            <div role="main" style="padding-left: 3%;">
                             	<span id="maincontent"></span>
-                            	<div id="site-news-forum" style="font-family: -webkit-body;">
-                                <h2 class="headingblock header" style="background-color: #fff; padding-left: 40%;">Site news</h2><a id="p759"></a>
+                            	<div id="site-news-forum" style="font-family: -webkit-body; border:1px solid; border-radius: 10px; margin-top: 4%; margin-bottom: 4%;">
+                                <h2 class="headingblock header" style="background-color: #fff; padding-left: 40%; ">Site news</h2><a id="p759"></a>
                               
                               @foreach($news as $a => $new)
 
