@@ -50,7 +50,7 @@ Route::get('admin/assignment', 'HomeController@makeAssignment')->name('makeAssig
 Route::post('admin/assignment', 'HomeController@makeAssignmentPost')->name('makeAssignmentPost');
 
 //profile
-Route::get('profile', 'HomeController@profile1')->name('profile');
+Route::get('profile', 'HomeController@mahasiswa_login')->name('profile');
 
 //Route::get('home', 'LandingController@index');
 //Route::get('logout', 'HomeController@index');
