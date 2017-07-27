@@ -43,6 +43,7 @@ return array(
     'CreateReplyForumTable' => $baseDir . '/database/migrations/2017_07_26_060221_create_reply_forum_table.php',
     'CreateSurveyTable' => $baseDir . '/database/migrations/2017_07_26_110818_create_survey_table.php',
     'CreateTopicForumTable' => $baseDir . '/database/migrations/2017_07_26_060150_create_topic_forum_table.php',
+    'CreateUsersData' => $baseDir . '/database/migrations/2017_07_27_011535_create_users_data.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/backup/2014_10_12_000000_create_users_table.php',
     'Cron\\AbstractField' => $vendorDir . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
