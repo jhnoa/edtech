@@ -73,7 +73,6 @@
 																	<dd>{{$jabatan}}</dd>
 																	<dt>Course profiles</dt>
 																	<dd>
-																		<a >{{$nama_mapel}} ( {{$kode_mapel}})</a>, 
 																		<a href="">Kalkulus II (MAT10033) - Kelas A &amp; B (2014)</a>,
 																		<a href="">Dasar-Dasar Animasi (HCI10072) - Kelas A (2014)</a>,
 																		<a href="">Sistem Operasi (HCI10083) - Kelas A (2014)</a>,

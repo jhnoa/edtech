@@ -76,6 +76,25 @@ class HomeController extends Controller
         
     }
 
+    public function mahasiswa_login(){
+        $students = Auth::User()->id;
+        $courses = DB::select('select name, prodi, jabatan from data_mahasiswa where id=:id',['id'=>$students]);
+        $content['Name']  = $courses[0]->name;
+        $content['Major']  = $courses[0]->prodi;
+        $content['Status']  = $courses[0]->jabatan;
+        $content['Email']  = Auth::user()->email;
+
+        //return var_export($courses);
+        return view('profile',
+        [
+          'title' => 'Profile',
+          'name' => $content['Name'],
+          'email' => $content['Email'],
+          'prodi' => $content['Major'],
+          'jabatan'=> $content['Status']
+        ]);
+    }
+
     public function assignDosenToCourse()
     {
         $lecturers = DB::select('select id,name from users where type="2"');
