@@ -309,6 +309,7 @@ class ComposerStaticInit026062611a608ac62437cc205d6fd8b9
         'CreateReplyForumTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_26_060221_create_reply_forum_table.php',
         'CreateSurveyTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_26_110818_create_survey_table.php',
         'CreateTopicForumTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_26_060150_create_topic_forum_table.php',
+        'CreateUsersData' => __DIR__ . '/../..' . '/database/migrations/2017_07_27_011535_create_users_data.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/backup/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
