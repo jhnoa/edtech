@@ -272,9 +272,6 @@ class HomeController extends Controller
 
     public function course()
     {
-        $idUser = Auth::user()->id;
-        
-        $video = DB::select('select title,videoUrl,videoEmbed from courseVideos where courseId=:id', ['id'=>$id]);
         return view('learning-course',
       [
         'title' => 'View Course',
