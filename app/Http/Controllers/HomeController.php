@@ -42,7 +42,7 @@ class HomeController extends Controller
             $x = DB::select('select id,name from courses where id=:id',['id'=>$key->courseId]);
             $res[] = ['name' => $x[0]->name, 'id' => $x[0]->id];
         }
-        //return var_export($res);
+        return '<pre>'.var_export(Auth::user()).'</pre>';
         return view('dosen.assigned',
             [
                 'title' => 'Assigned Subject',
@@ -194,6 +194,11 @@ class HomeController extends Controller
         return view('dosen.makeNews', ['title' => 'Make News', 'id' => $id, 'name' => $name ]);
     }
 
+    public function embedYoutube(Request $request)
+    {
+        
+    }
+
     /* forum */
     public function forum1()
     {
@@ -203,7 +208,7 @@ class HomeController extends Controller
         [
           'title' => 'Forum',
           'course' => 'Education Technology',
-          'sum_topic' => '1'
+          'sum_topic' => '2'
         ]);
     }
     public function forum2()
